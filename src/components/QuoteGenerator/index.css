@@ -1,0 +1,32 @@
+.quoteGeneratorWrapper {
+    width: 25%;
+    text-align: right;
+    margin-top: 50px;
+    font-family: 'Westeinde';
+}
+
+.sentence {
+    color: var(--black);
+    padding-bottom: 4px;
+    font-family: 'Westeinde';
+}
+
+.sentence::before {
+    content: '“';
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0px 2px 0px 0px;
+}
+
+.sentence::after {
+    content: '”';
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0px 0px 0px 2px;
+}
+
+@media (max-width: 680px) {
+    .quoteGeneratorWrapper{
+      display: none;
+    }
+}

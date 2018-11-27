@@ -1,0 +1,31 @@
+.navbarMobileWrapper {
+    display: none;
+}
+
+
+@media (max-width: 680px) {
+    .navbarMobileWrapper {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: fixed;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        background-color: var(--lightGray);
+        overflow-y: hidden;
+    }
+
+    .navbarMobileWrapper p {
+        font-family: 'Lora';
+        font-size: 50px;
+        color: var(--gray);
+        line-height: 100%;
+        padding: 20px 0px;
+        cursor: pointer;
+    }
+}

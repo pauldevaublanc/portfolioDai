@@ -1,0 +1,149 @@
+.profileWrapper {
+    padding: 30px;
+}
+
+.contentWrapper {
+    max-width: 850px;
+}
+
+.contentWrapper h2 {
+ color: var(--gray);
+ font-size: 13px;
+ padding-bottom: 25px;
+ font-family: 'Westeinde';
+ font-weight: bold;
+}
+
+.introduction {
+    margin-bottom: 60px;
+    font-family: 'Lora';
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.introduction h1 {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-size: 130px;
+    font-weight: bolder;
+    color: var(--black);
+    font-family: "Weisteinde";
+}
+
+.biography {
+    margin-bottom: 80px;
+    color: var(--black);
+    font-size: 13px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+    display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.biographyWrapper{
+    width: 30%;
+}
+
+.biography h3{
+    font-size: 16px;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+.biography p {
+    width: 100%;
+    line-height: 18px;
+}
+
+.socialNetworks {
+    margin-bottom: 80px;
+    max-width: 100px;
+}
+
+.socialNetworks a {
+    color: var(--black);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.socialNetworks a:hover {
+    color: var(--pink);
+}
+
+.contact {
+    margin-bottom: 50px;
+    max-width: 350px;
+    color: var(--black);
+}
+
+.contact a {
+    color: var(--pink);
+    border-bottom: 1px solid var(--pink);
+    display: inline-block;
+}
+
+.contact img {
+    width: 12px;
+    height: auto;
+    vertical-align: text-bottom;
+}
+
+.credit {
+    margin-bottom: 80px;
+    color: var(--gray);
+}
+
+.credit a {
+    border-bottom: 1px solid var(--gray);
+    color: var(--gray);
+    padding-bottom: 2px;
+}
+
+.dpMobile {
+    display: none;
+}
+
+@media (max-width: 960px){
+    .biographyWrapper {
+        width: 45%;
+    }
+
+    .biography div:nth-child(1){
+        margin-bottom: 60px;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .biography {
+        display: block;
+    }
+
+    .biography div:first-child,  .biography div:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .biographyWrapper  {
+        width: 100%;
+    }
+
+    .dpMobile {
+        display: inline-block;
+    }
+
+    .introduction h1 {
+        white-space: nowrap;
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 450px) {
+    .introduction h1 {
+        font-size: 80px;
+    }
+
+}

@@ -1,0 +1,26 @@
+.clockWrapper {
+    width: 25%;
+    text-align: left;
+    white-space: nowrap;
+    color: var(--gray);
+    font-family: 'Westeinde';
+}
+
+.city {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.redCircle {
+    width: 25px;
+    height: 25px;
+    background-color: var(--red);
+    border-radius: 50%;
+    margin: 8px 0px;
+}
+
+@media (max-width: 680px) {
+    .clockWrapper{
+      display: none;
+    }
+}

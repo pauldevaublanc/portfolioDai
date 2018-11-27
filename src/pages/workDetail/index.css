@@ -1,0 +1,143 @@
+.workDetailWrapper {
+    padding: 30px;
+    overflow: hidden;
+}
+
+.workDetailContainer {
+    display: flex;
+    width: 100%;
+}
+
+.workContent {
+    width: 100%;
+}
+
+.workDescriptionDetail {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.description {
+    max-width: 500px;
+    color: var(--black);
+    font-size: 13px;
+    line-height: 18px;
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+.description img {
+    max-width: 230px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.detail {
+    max-width: 280px;
+    width: 50%;
+    max-height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail div {
+    width: 50%;
+    color: var(--black);
+}
+
+.detail h6 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: var(--gray);
+}
+
+.visuelWork {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.visuelWork img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/*UNDERLINE TRANSITION EFFECT */
+.custom-underline {
+    position: relative;
+    display: initial;
+    color: var(--black);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--black);
+    -webkit-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    font-size: 16px;
+  }
+  
+  .custom-underline::after {
+    content: "";
+    position: absolute;
+  }
+  
+  .box-link {
+      text-align: center;
+      margin: 30px 0px 80px;
+  }
+  
+  .link {
+    -webkit-transition: 0.3s linear all .1s;
+    -o-transition: 0.3s linear all .1s;
+    transition: 0.3s linear all .1s;
+  }
+  
+  .link:hover, .custom-underline:hover {
+    color: var(--gray);
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+  }
+  
+  .link .custom-underline::after {
+    top: 100%;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    background-color: var(--gray);
+    -webkit-transition: 0.5s linear all .1s;
+    -o-transition: 0.5s linear all .1s;
+    transition: 0.5s linear all .1s;
+  }
+  
+  .link:hover .custom-underline::after {
+    width: 100%;
+    -webkit-transition: 0.6s ease all;
+    -o-transition: 0.6s ease all;
+    transition: 0.6s ease all;
+  }
+
+  @media (max-width: 960px) {
+    .workDescriptionDetail {
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .description {
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .detail {
+        max-width: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .detail div {
+        width: 6%;
+        white-space: nowrap;    
+    }
+    
+  }

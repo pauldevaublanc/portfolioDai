@@ -1,0 +1,73 @@
+.titleCircle {
+    position: relative;
+    width: 90vmin;
+    height: 90vmin;
+    overflow: hidden;
+  }
+  
+  .titleCircle svg {
+    fill: var(--black);
+    -webkit-text-fill-color: var(--black);
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+    transition: 0.4s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+        -webkit-animation: 20s rotate infinite linear;
+    animation: 20s rotate infinite linear;
+    animation-direction: reverse;
+  }
+  
+  .titleCircle svg:hover{
+    fill: var(--pink);
+    -webkit-text-fill-color: var(--pink);
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .titleCircle text {
+    font-size: 2.04rem;
+    font-weight: bold;
+    font-family: "KozGoPro";
+  }
+  
+  @-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); transform: rotate(0); }
+  }
+  
+  @keyframes rotate {
+    from { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); transform: rotate(0); }
+  }
+  
+  @media (max-width: 1250px) {
+    .titleCircle {
+      width: 75vmin;
+      height: 75vmin;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .titleCircle {
+      width: 65vmin;
+      height: 65vmin;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .titleCircle {
+      width: 100vw;
+      height: 100vmin;
+    }
+
+    .titleCircle svg {
+      fill: var(--pink);
+      -webkit-text-fill-color: var(--pink);
+    }
+  }
+ 

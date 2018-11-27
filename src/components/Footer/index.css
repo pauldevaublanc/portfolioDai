@@ -1,0 +1,20 @@
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.footerWrapper p:nth-child(2){
+    font-size: 10px;
+}
+
+
+#fb-share-button  {
+    vertical-align: middle;
+    color: var(--gray);
+    font-size: 12px;
+    font-family: 'Westeinde';
+    cursor: pointer;
+    text-align: left;
+}

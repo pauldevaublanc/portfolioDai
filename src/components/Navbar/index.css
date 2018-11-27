@@ -1,0 +1,135 @@
+.navbarWrapper {  
+    font-family: 'Lora';
+    width: 100%;
+    box-sizing: border-box; 
+    margin-bottom: 60px;
+}
+
+.navbarElements {
+    display: flex;
+    width: 100%; 
+    margin-left: 40px;
+}
+
+.navbarElements p {
+    margin-left: 60px;
+    cursor: pointer;
+    text-decoration: inherit;
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.name {
+    display: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+	font-size: 16px;
+    color: var(--pink);
+    font-family: 'Westeinde';
+    
+}
+
+/**** TRANSITION COLOR HOVER ****/
+
+.transitionColor p {
+    position: relative;
+    display: block;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+  
+.transitionColor p:hover {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+  
+.transitionColor p:before {
+    content: attr(data-hover);
+    position: absolute;
+    color: var(--pink);
+    left: 0;
+    width: 0;
+    -webkit-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    transition: width 0.4s;
+    overflow: hidden;
+    white-space: nowrap;  
+  }
+  
+.transitionColor p:hover:before {
+    width: 100%;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+  
+}
+  
+.navbarWrapper .navbarElements p:hover:before {
+    width: 100%;
+    -webkit-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+
+/**** BURGER MENU  ****/
+
+.burgerMenuWrapper {
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    display: none;
+    z-index: 2;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 85%;
+    height: 3px;
+    background-color: var(--gray);
+    margin: 3px auto;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+
+
+.burgerMenuWrapper:hover .bar1, .burgerMenuWrapper:hover .bar3 {
+    width: 100%;
+    transition: all linear 0.2s;
+}
+
+.open .bar1 {
+    transform: rotate(-49deg) translate(-7px, 5px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+
+
+@media (max-width: 680px) {
+    .navbarWrapper {  
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbarWrapper a {
+        z-index: 2;
+    }
+    
+    .burgerMenuWrapper, .name {
+      display: block;
+    }
+
+    .navbarElements {
+        display: none;
+    }
+}
