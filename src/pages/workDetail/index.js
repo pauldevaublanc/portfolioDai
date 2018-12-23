@@ -55,13 +55,15 @@ class WorkDetail extends Component {
                         </div> 
                         
                         <div className="visuelWork">
-                            <Fade bottom>
+                            
                             {
                                 visuels.map((img, key) => 
-                                <img key={key} src={require(`../../img/${img}`)} alt="" />
+                                <Fade key={key} bottom>
+                                    <img  src={require(`../../img/${img}`)} alt="" />
+                                </Fade>
                                 )
                             }
-                            </Fade>
+                            
                             <Link  to="/work">
                                 <Fade bottom>
                                     <div className="link box-link">

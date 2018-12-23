@@ -43,10 +43,16 @@ class Work extends Component {
     handleMouseMove = (e) => {
 
         let cursorStrength = 500;
+        let adjustWidth = 0;
         if (window.innerWidth <= 680 ){
             cursorStrength = 1100
+            adjustWidth = 100
+        } else if (window.innerWidth <= 1360 ){
+            cursorStrength = 1000
+            adjustWidth = 100
         } else {
             cursorStrength = 500
+            adjustWidth = 0
         }
 
         let width = cursorStrength/ window.innerWidth;
@@ -54,11 +60,10 @@ class Work extends Component {
         let pageX = e.pageX - (window.innerWidth) / 2;
         let pageY = e.pageY - (window.innerHeight) /2;
         this.setState({ 
-            x: -(Math.round(width * pageX))-(cursorStrength/2),
-            y: -(Math.round(height * pageY))-(cursorStrength/2)
+            x: -(Math.round(width * pageX))-(cursorStrength/2)+adjustWidth,
+            y: -(Math.round(height * pageY))-(cursorStrength/2)+adjustWidth
+            
         });
-        
-        
     }
 
     render() {

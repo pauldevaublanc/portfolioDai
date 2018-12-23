@@ -25,9 +25,10 @@
     padding-bottom: 30px;
     padding-top: 20px;
     font-size: 130px;
+    line-height: 180px;
     font-weight: bolder;
     color: var(--black);
-    font-family: "Weisteinde";
+    font-family: 'KozMin';
 }
 
 .biography {
@@ -138,12 +139,14 @@
     .introduction h1 {
         white-space: nowrap;
         font-size: 120px;
+        line-height: 160px;
     }
 }
 
 @media (max-width: 450px) {
     .introduction h1 {
         font-size: 80px;
+        line-height: 110px;
     }
 
 }

@@ -9,8 +9,6 @@ import Footer from '../../components/Footer/index';
 
 
 
-
-
 class Profile extends Component {
     render() {
       return (
@@ -22,7 +20,7 @@ class Profile extends Component {
               <Fade bottom>
                 <div className="introduction">
                   <p>Ladies and Gentlemen</p>
-                  <h1 class="mobileTitle">私は<br class="dpMobile"/>大ゴンド<br class="dpMobile"/><span class="dpMobile">です</span>*</h1>
+                  <h1 className="mobileTitle">私は<br className="dpMobile"/>大ゴンド<br className="dpMobile"/><span className="dpMobile">です</span>*</h1>
                   <p>* I am Dai Gondo</p>
                 </div>
               </Fade>

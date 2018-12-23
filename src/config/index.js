@@ -1,30 +1,215 @@
+const archive = {
+    logo: 'ARCHIVE_logo.png',
+    description: 'This is a lot of graphic creation / illustrations for many brands and agency i have made since 2015.',
+    role: 'Illustration/ Graphic design',
+    projectType: 'All',
+    agency: 'A lot',
+    year: '2015-2018',
+    visuel: [
+        'ARCHIVE_1.png',
+        'ARCHIVE_2.png'
+    ]
+}
+
+const BBWalker = {
+    logo: 'BBWALKER_logo.png',
+    description: 'BBWalker 6.0 (‘Belgian Beer Walker’) is the official app of the Belgian Beer Weekend in Japan and bundles all the information you need to know to enjoy the event: what to drink & eat, which bands are playing, the floor map and your very own beer tracker!',
+    role: 'Conception/ Design',
+    projectType: 'Application design',
+    agency: 'Trainspot',
+    year: 2018,
+    visuel: [
+        'BBWALKER_design.jpg'
+    ]
+}
+
+const Covance = {
+    logo: 'COVANCE_logo.png',
+    description: 'I designed the Covance leaflet, a global contract research organization, is the world’s most comprehensive drug development company.',
+    role: 'Graphic design',
+    projectType: 'Leaflet design',
+    agency: 'Transport',
+    year: 2017,
+    visuel: [
+        'Covance_leaflet_1.jpg',
+        'Covance_leaflet_2.jpg',
+        'Covance_leaflet_3.jpg'
+    ]
+}
+
+const DKNY = {
+    logo: 'DKNY_logo.png',
+    description: 'DKNY is a New York-based fashion house specializing in fashion goods for men and women. This is my proposal T-shirt for girl / kid wear. ',
+    role: 'Illustration',
+    projectType: 'T-shirt Design',
+    agency: 'Sublim Design',
+    year: 2016,
+    visuel: [
+        'DKNY_1.png',
+    ]
+}
+
+const Chevignon = {
+    logo: 'CHEVIGNON_logo.png',
+    description: 'Chevignon is one of the leading ready-to-wear French brands. It produced modern, customised versions of aviator jackets, as well as clothes inspired by 1950s Americas style. I have the pleasure to work for the Chevignon’s spring / summer collection inspired by Art Deco architecture, Miami colors etc...',
+    role: 'Illustration',
+    projectType: 'T-shirt Design',
+    agency: 'Sublim Design',
+    year: 2016,
+    visuel: [
+        'img_CHEVIGNON_1.png',
+        'img_CHEVIGNON_2.png',
+        'img_CHEVIGNON_3.jpg',
+        'img_CHEVIGNON_4.jpg',
+        'img_CHEVIGNON_5.jpg',
+        'img_CHEVIGNON_6.jpg',
+        'img_CHEVIGNON_7.jpg'
+    ]
+}
+
+const Ikks = {
+    logo: 'IKKS_logo.png',
+    description: 'French designers IKKS create distinctive casual pieces with a sportswear influence for girls and boys of all ages.',
+    role: 'Illustration',
+    projectType: 'T-shirt Design',
+    agency: 'Sublim Design',
+    year: 2016,
+    visuel: [
+        'IKKS_1.png',
+        'IKKS_2.jpg'
+    ]
+}
+
+const Konishi = {
+    logo: 'KONISHI_logo.png',
+    description: 'For Valentine\'s day 2017 i have been asked by Transport KK to create a packaging design of Liefmans, Gouden Carolus and Warsteiner.',
+    role: 'Illlustration/ Graphic design',
+    projectType: 'Packaging design',
+    agency: 'Transport KK',
+    year: 2017,
+    visuel: [
+        '_Caroulus_Valentine_Square.gif',
+        '_Warsteiner_Valentine_Square.gif'
+    ]
+}
+
+const Levis = {
+    logo: 'LEVIS_logo.png',
+    description: 'Levi Strauss & Co is an american clothing company known worldwide for its Levi’s brand of denim jeans. For the collection of 2016 I keep their vintage/american identity and have made a seri of tee shirts.',
+    role: 'Illustration',
+    projectType: 'T-shirt Design',
+    agency: 'Sublim Design',
+    year: 2016,
+    visuel: [
+        'img_LEVIS_1.jpg',
+        'img_LEVIS_2.jpg',
+        'img_LEVIS_3.jpg',
+        'img_LEVIS_4.jpg',
+        'img_LEVIS_5.jpg',
+        'img_LEVIS_6.jpg',
+        'img_LEVIS_7.jpg',
+        'img_LEVIS_8.jpg',
+        'img_LEVIS_9.jpg',
+        'img_LEVIS_10.jpg',
+        'img_LEVIS_11.jpg'
+    ]
+}
+
+const Keed = {
+    logo: 'KEED_logo.png',
+    description: 'I have the  opportunity to work for Keed. 38 cards ! 14 birthdays cards: Today I was born, I have 1 week, 1 month, 2 months, 3 months ... until 1 year 22 cards "first time": Today I made a bravo, I sit, my first steps, my first laugh, my first big mistake, I tasted lemon, my first day at home ... and many other surprises! 2 customizable cards: what to mark the baby\'s footprint and note his achievements.',
+    role: 'Illustration',
+    projectType: 'Card design',
+    agency: 'Keed',
+    year: 2016,
+    visuel: [
+        'keed-01.jpg',
+        'keed-02.jpg'
+    ]
+}
+
+const Mokatine = {
+    logo: 'MOKATINE_logo.png',
+    description: 'I did some proposals for Mokatine packaging design. Caramella Mokatine, also known as the "Arabier", is a coffee-flavoured sweet in a sachetti wrapper.',
+    role: 'Graphic design',
+    projectType: 'Packaging design',
+    agency: 'Transport',
+    year: 2018,
+    visuel: [
+        'Mokatine_packaging_1.jpg',
+        'Mokatine_packaging_2.jpg'
+    ]
+}
+
+const Oxbow = {
+    logo: 'OXBOW_logo.png',
+    description: 'I did some creative tee shirts and pattern for Oxbow. It is a famous french brand of clothing and athletic equipment involved in five sports: surfing, windsurfing, kitesurfing, snowboarding, and skiing.',
+    role: 'Illustration',
+    projectType: 'T-shirt Design',
+    agency: 'Sublim Design',
+    year: 2016,
+    visuel: [
+        'OXBOW_1.png',
+        'OXBOW_2.png',
+        'OXBOW_3.png',
+        'OXBOW_4.png'
+    ]
+}
+
+const Resume = {
+    logo: 'RESUME_logo.png',
+    description: 'Because we all need a resume, I have made mine. I think Self-promotion is essential to a graphic designer’s success. I tried to make it in a personal and original way as possible.',
+    role: 'Graphic design',
+    projectType: 'Leaflet design',
+    agency: 'Myself',
+    year: 2019,
+    visuel: [
+        'Daigondo_resume_1.jpg'
+    ]
+}
+
+const Tokyoiter = {
+    logo: 'TOKYOITER_logo.png',
+    description: 'The Tokyoiter is made by illustration and drawing freaks who are willing to present the talent of artists they like to a larger audience. Some of us are illustrators and some are just living in Tokyo a wonderful city full of stories and daily inspiration. We want to celebrate the passion for this city and its inhabitants\' story.',
+    role: 'Graphic design',
+    projectType: 'Poster',
+    agency: 'Tokyoiter',
+    year: 2019,
+    visuel: [
+        'The_Tokyoiter_1.png',
+        'The_Tokyoiter_2.jpg'
+    ]
+}
+
+const Vedett = {
+    logo: 'VEDETT_logo.png',
+    description: 'I designed the Japanese Vedett website in a very urban and colorful way. Vedett has 3 bottles for 3 types of beers : Extra White, Extra Blond, Extra Ordinary IPA.',
+    role: 'Conception/ Webdesign',
+    projectType: 'Website',
+    agency: 'Transport KK',
+    year: 2016,
+    visuel: [
+        'VEDETT_1.png',
+        'VEDETT_2.png'
+    ]
+}
+
+const Werkstatt = {
+    logo: 'WERKSTATT_logo.png',
+    description: 'In 2012 i had the chance to do my internship at the amazing Werkstatt studio in Paris. The idea was to draw the W logo of Werkstatt with my style of illustration.',
+    role: 'Pencil drawing',
+    projectType: 'Personal',
+    agency: 'Werkstatt',
+    year: 2012,
+    visuel: [
+        'WERKSTATT.jpg'
+    ]
+}
+
+
 
 
 export default {
-
-
-    sentences: [
-        {
-            sentence: "Je joue pour me battre contre l'idée de perdre",
-            author: "Eric Cantona"
-        },
-        {
-            sentence: "Un Dai peut en cacher un autre",
-            author: "Paul Taylor"
-        },
-        {
-            sentence: "Dai qui roule n'amasse pas mousse",
-            author: "Paul Smith"
-        },
-        {
-            sentence: "Dai qui rit a moitié dans son lit",
-            author: "Paul McCartney"
-        },
-        {
-            sentence: "Un Dai avertit en vaut deux",
-            author: "Paul Encas"
-        },
-    ],
     
     hobbies: [
         {
@@ -69,14 +254,7 @@ export default {
                 top: '79%',
                 left: '5%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2015
-            }
+            detail: archive
         },
         {
             id: 1,
@@ -89,14 +267,7 @@ export default {
                 top: '85%',
                 left: '85%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2015
-            }
+            detail: archive
         },
         {
             id: 2,
@@ -109,14 +280,7 @@ export default {
                 top: '96%',
                 left: '54%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2016
-            }
+            detail: BBWalker
         },
         {
             id: 3,
@@ -129,19 +293,7 @@ export default {
                 top: '11%',
                 left: '59%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'Covance Inc., a global contract research organization (CRO), is the world’s most comprehensive drug development company, dedicated to advancing healthcare and delivering Solutions Made Real® by providing high-quality nonclinical, preclinical, clinical and commercialization services to pharmaceutical and biotechnology companies to help reduce the time and costs associated with drug development.',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2017,
-                visuel: [
-                    'Covance_leaflet_1.jpg',
-                    'Covance_leaflet_2.jpg',
-                    'Covance_leaflet_3.jpg'
-                ]
-            }
+            detail: Covance
         },
         {
             id: 3,
@@ -154,19 +306,7 @@ export default {
                 top: '6%',
                 left: '34%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'Covance Inc., a global contract research organization (CRO), is the world’s most comprehensive drug development company, dedicated to advancing healthcare and delivering Solutions Made Real® by providing high-quality nonclinical, preclinical, clinical and commercialization services to pharmaceutical and biotechnology companies to help reduce the time and costs associated with drug development.',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2017,
-                visuel: [
-                    'Covance_leaflet_1.jpg',
-                    'Covance_leaflet_2.jpg',
-                    'Covance_leaflet_3.jpg'
-                ]
-            }
+            detail: Covance
         },
         {
             id: 4,
@@ -179,17 +319,7 @@ export default {
                 top: '50%',
                 left: '64%'
             },
-            detail: {
-                logo: 'DKNY_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2018,
-                visuel: [
-                    'DKNY_1.png',
-                ]
-            }
+            detail: DKNY
         },
         {
             id: 5,
@@ -202,23 +332,7 @@ export default {
                 top: '21%',
                 left: '47%'
             },
-            detail: {
-                logo: 'CHEVIGNON_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2019,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg',
-                    'img_CHEVIGNON_4.jpg',
-                    'img_CHEVIGNON_5.jpg',
-                    'img_CHEVIGNON_6.jpg',
-                    'img_CHEVIGNON_7.jpg'
-                ]
-            }
+            detail: Chevignon
         },
         {
             id: 5,
@@ -231,23 +345,7 @@ export default {
                 top: '33%',
                 left: '34%'
             },
-            detail: {
-                logo: 'CHEVIGNON_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2019,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg',
-                    'img_CHEVIGNON_4.jpg',
-                    'img_CHEVIGNON_5.jpg',
-                    'img_CHEVIGNON_6.jpg',
-                    'img_CHEVIGNON_7.jpg'
-                ]
-            }
+            detail: Chevignon
         },
         {
             id: 5,
@@ -260,23 +358,7 @@ export default {
                 top: '41%',
                 left: '48%'
             },
-            detail: {
-                logo: 'CHEVIGNON_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2019,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg',
-                    'img_CHEVIGNON_4.jpg',
-                    'img_CHEVIGNON_5.jpg',
-                    'img_CHEVIGNON_6.jpg',
-                    'img_CHEVIGNON_7.jpg'
-                ]
-            }
+            detail: Chevignon
         },
         {
             id: 5,
@@ -289,23 +371,7 @@ export default {
                 top: '16%',
                 left: '23%'
             },
-            detail: {
-                logo: 'CHEVIGNON_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2019,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg',
-                    'img_CHEVIGNON_4.jpg',
-                    'img_CHEVIGNON_5.jpg',
-                    'img_CHEVIGNON_6.jpg',
-                    'img_CHEVIGNON_7.jpg'
-                ]
-            }
+            detail: Chevignon
         },
         {
             id: 5,
@@ -318,23 +384,7 @@ export default {
                 top: '0%',
                 left: '69%'
             },
-            detail: {
-                logo: 'CHEVIGNON_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2019,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg',
-                    'img_CHEVIGNON_4.jpg',
-                    'img_CHEVIGNON_5.jpg',
-                    'img_CHEVIGNON_6.jpg',
-                    'img_CHEVIGNON_7.jpg'
-                ]
-            }
+            detail: Chevignon
         },
         {
             id: 6,
@@ -347,14 +397,7 @@ export default {
                 top: '22%',
                 left: '74%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2020
-            }
+            detail: Ikks
         },
         {
             id: 7,
@@ -367,14 +410,7 @@ export default {
                 top: '12%',
                 left: '87%'
             },
-            detail: {
-                logo: 'KONISHI_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2021
-            }
+            detail: Konishi
         },
         {
             id: 7,
@@ -387,14 +423,7 @@ export default {
                 top: '46%',
                 left: '84%'
             },
-            detail: {
-                logo: 'KONISHI_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2021
-            }
+            detail: Konishi
         },
         {
             id: 8,
@@ -407,27 +436,7 @@ export default {
                 top: '36%',
                 left: '12%'
             },
-            detail: {
-                logo: 'LEVIS_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_LEVIS_1.jpg',
-                    'img_LEVIS_2.jpg',
-                    'img_LEVIS_3.jpg',
-                    'img_LEVIS_4.jpg',
-                    'img_LEVIS_5.jpg',
-                    'img_LEVIS_6.jpg',
-                    'img_LEVIS_7.jpg',
-                    'img_LEVIS_8.jpg',
-                    'img_LEVIS_9.jpg',
-                    'img_LEVIS_10.jpg',
-                    'img_LEVIS_11.jpg',
-                ]
-            }
+            detail: Levis
         },
         {
             id: 8,
@@ -440,27 +449,7 @@ export default {
                 top: '19%',
                 left: '1%'
             },
-            detail: {
-                logo: 'LEVIS_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_LEVIS_1.jpg',
-                    'img_LEVIS_2.jpg',
-                    'img_LEVIS_3.jpg',
-                    'img_LEVIS_4.jpg',
-                    'img_LEVIS_5.jpg',
-                    'img_LEVIS_6.jpg',
-                    'img_LEVIS_7.jpg',
-                    'img_LEVIS_8.jpg',
-                    'img_LEVIS_9.jpg',
-                    'img_LEVIS_10.jpg',
-                    'img_LEVIS_11.jpg',
-                ]
-            }
+            detail: Levis
         },
         {
             id: 8,
@@ -473,27 +462,7 @@ export default {
                 top: '56%',
                 left: '32%'
             },
-            detail: {
-                logo: 'LEVIS_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_LEVIS_1.jpg',
-                    'img_LEVIS_2.jpg',
-                    'img_LEVIS_3.jpg',
-                    'img_LEVIS_4.jpg',
-                    'img_LEVIS_5.jpg',
-                    'img_LEVIS_6.jpg',
-                    'img_LEVIS_7.jpg',
-                    'img_LEVIS_8.jpg',
-                    'img_LEVIS_9.jpg',
-                    'img_LEVIS_10.jpg',
-                    'img_LEVIS_11.jpg',
-                ]
-            }
+            detail: Levis
         },
         {
             id: 8,
@@ -506,27 +475,7 @@ export default {
                 top: '69%',
                 left: '21%'
             },
-            detail: {
-                logo: 'LEVIS_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_LEVIS_1.jpg',
-                    'img_LEVIS_2.jpg',
-                    'img_LEVIS_3.jpg',
-                    'img_LEVIS_4.jpg',
-                    'img_LEVIS_5.jpg',
-                    'img_LEVIS_6.jpg',
-                    'img_LEVIS_7.jpg',
-                    'img_LEVIS_8.jpg',
-                    'img_LEVIS_9.jpg',
-                    'img_LEVIS_10.jpg',
-                    'img_LEVIS_11.jpg',
-                ]
-            }
+            detail: Levis
         },
         {
             id: 8,
@@ -539,27 +488,7 @@ export default {
                 top: '44%',
                 left: '-2%'
             },
-            detail: {
-                logo: 'LEVIS_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_LEVIS_1.jpg',
-                    'img_LEVIS_2.jpg',
-                    'img_LEVIS_3.jpg',
-                    'img_LEVIS_4.jpg',
-                    'img_LEVIS_5.jpg',
-                    'img_LEVIS_6.jpg',
-                    'img_LEVIS_7.jpg',
-                    'img_LEVIS_8.jpg',
-                    'img_LEVIS_9.jpg',
-                    'img_LEVIS_10.jpg',
-                    'img_LEVIS_11.jpg',
-                ]
-            }
+            detail: Levis
         },
         {
             id: 8,
@@ -572,32 +501,12 @@ export default {
                 top: '58%',
                 left: '98%'
             },
-            detail: {
-                logo: 'LEVIS_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_LEVIS_1.jpg',
-                    'img_LEVIS_2.jpg',
-                    'img_LEVIS_3.jpg',
-                    'img_LEVIS_4.jpg',
-                    'img_LEVIS_5.jpg',
-                    'img_LEVIS_6.jpg',
-                    'img_LEVIS_7.jpg',
-                    'img_LEVIS_8.jpg',
-                    'img_LEVIS_9.jpg',
-                    'img_LEVIS_10.jpg',
-                    'img_LEVIS_11.jpg',
-                ]
-            }
+            detail: Levis
         },
         {
             id: 9,
             title: 'KEED',
-            subTitle: 'T-shirt design',
+            subTitle: 'Card design',
             img: 'KEED_1.png',
             color: '#FF7BA9',
             width: '102px',
@@ -605,24 +514,12 @@ export default {
                 top: '35%',
                 left: '64%'
             },
-            detail: {
-                logo: 'KEED_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg'
-                ]
-            }
+            detail: Keed
         },
         {
             id: 9,
             title: 'KEED',
-            subTitle: 'T-shirt design',
+            subTitle: 'Card design',
             img: 'KEED_2.png',
             color: '#FF7BA9',
             width: '102px',
@@ -630,24 +527,12 @@ export default {
                 top: '43%',
                 left: '92%'
             },
-            detail: {
-                logo: 'KEED_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg'
-                ]
-            }
+            detail: Keed
         },
         {
             id: 9,
             title: 'KEED',
-            subTitle: 'T-shirt design',
+            subTitle: 'Card design',
             img: 'KEED_3.png',
             color: '#FF7BA9',
             width: '102px',
@@ -655,19 +540,7 @@ export default {
                 top: '26%',
                 left: '94%'
             },
-            detail: {
-                logo: 'KEED_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'img_CHEVIGNON_1.png',
-                    'img_CHEVIGNON_2.png',
-                    'img_CHEVIGNON_3.jpg'
-                ]
-            }
+            detail: Keed
         },
         {
             id: 10,
@@ -680,14 +553,7 @@ export default {
                 top: '79%',
                 left: '64%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022
-            }
+            detail: Mokatine
         },
         {
             id: 10,
@@ -700,14 +566,7 @@ export default {
                 top: '64%',
                 left: '87%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022
-            }
+            detail: Mokatine
         },
         {
             id: 11,
@@ -720,20 +579,7 @@ export default {
                 top: '92%',
                 left: '24%'
             },
-            detail: {
-                logo: 'OXBOW_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'OXBOW_1.png',
-                    'OXBOW_2.png',
-                    'OXBOW_3.png',
-                    'OXBOW_4.png'
-                ]
-            }
+            detail: Oxbow
         },
         {
             id: 11,
@@ -746,20 +592,7 @@ export default {
                 top: '65%',
                 left: '3%'
             },
-            detail: {
-                logo: 'OXBOW_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'OXBOW_1.png',
-                    'OXBOW_2.png',
-                    'OXBOW_3.png',
-                    'OXBOW_4.png'
-                ]
-            }
+            detail: Oxbow
         },
         {
             id: 12,
@@ -772,14 +605,7 @@ export default {
                 top: '67%',
                 left: '54%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022
-            }
+            detail: Resume
         },
         {
             id: 13,
@@ -792,14 +618,7 @@ export default {
                 top: '82%',
                 left: '37%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022
-            }
+            detail: Tokyoiter
         },
         {
             id: 14,
@@ -812,18 +631,7 @@ export default {
                 top: '72%',
                 left: '78%'
             },
-            detail: {
-                logo: 'VEDETT_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022,
-                visuel: [
-                    'VEDETT_1.png',
-                    'VEDETT_2.png'
-                ]
-            }
+            detail: Vedett
         },
         {
             id: 15,
@@ -836,14 +644,7 @@ export default {
                 top: '0%',
                 left: '7%'
             },
-            detail: {
-                logo: 'COVANCE_logo.png',
-                description: 'lorem ipsul jzadjo aojd jaoao',
-                role: 'Illustration',
-                projectType: 'T-shirt Design',
-                agency: 'Sublim Design',
-                year: 2022
-            }
+            detail: Werkstatt
         }
     ]
 }

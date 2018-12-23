@@ -17,8 +17,8 @@
 }
 
 .slider {
-    width: calc(100vw + 300px);
-    height: calc(100vh + 300px);
+    width: calc(100vw + 100px);
+    height: calc(100vh + 100px);
     position: fixed;
 }
 
@@ -54,8 +54,8 @@
 
 .rotateNameFirst{
     position:fixed; 
-    top:80px;
-    left: 20px; 
+    top:109px;
+    left: 30px; 
     width: 0px;
     z-index: 2;
 }
@@ -97,6 +97,23 @@
     font-weight: lighter;
 }
 
+@media (max-width: 2000px) {
+
+    .slider {
+        width: calc(100vw + 300px);
+        height: calc(100vh + 300px);
+    }
+
+}
+
+@media (max-width: 1360px) {
+
+    .slider {
+        width: calc(100vw + 600px);
+        height: calc(100vh + 600px);
+    }
+
+}
 
 @media (max-width: 680px) {
     .navbarFirst {
@@ -104,9 +121,8 @@
     }
 
     .slider {
-        width: calc(100vw + 1000px);
-        height: calc(100vh + 1000px);
-        position: fixed;
+        width: calc(100vw + 800px);
+        height: calc(100vh + 800px);
     }
 
     .workName h2 {
@@ -117,7 +133,5 @@
     .workName p {
         font-size: 17px;
         font-weight: lighter;
-    }
-
-    
+    } 
 }
