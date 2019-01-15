@@ -16,7 +16,15 @@ class Work extends Component {
         x: "-25%",
         y: "-25%",
         transition: "0s",
-        workIndex: 0
+        workIndex: 0,
+        windowWidth: window.innerWidth,
+        imgLoaded: false
+    }
+
+    handleImageLoaded = () => {
+        this.setState({
+            imgLoaded: true
+        })
     }
 
     handleMouseHover = (key) => {
@@ -67,6 +75,7 @@ class Work extends Component {
     }
 
     render() {
+        console.log(this.state.windowWidth)
       return (        
         <div className="workWrapper">
             <div className="navbarFirst">
@@ -108,18 +117,19 @@ class Work extends Component {
                         {
                             config.works.map((work, key) => {
                                 return(
-                                    <div key={key} 
-                                        
+                                    <div key={key}    
                                         onMouseOver={()=>this.handleMouseHover(key)} 
                                         onMouseLeave={this.handleMouseLeave}>
                                         <Link to={`/workDetail/${key + 1}`}>
-                                            <img src={require(`../../img/${work.img}`)} 
+                                            <img className="workVisuel" onLoad={this.handleImageLoaded.bind(this)} src={require(`../../img/${work.img}`)} 
                                             alt="" 
                                             style={{
                                                 width: work.width, 
                                                 top:work.position.top, 
                                                 left:work.position.left,
-                                                opacity: this.state.workIndex === work.id || key === this.state.activeImg || this.state.activeImg === null ? 1 : 0.1
+                                                opacity: this.state.workIndex === work.id || key === this.state.activeImg || this.state.activeImg === null ? 1 : 0.1,
+                                                visibility: this.state.imgLoaded === true ? 'visible' : 'hidden',
+                                                transition: 'visibility 3s linear'
                                             }}/>
                                         </Link>
                                     </div>

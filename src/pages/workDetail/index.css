@@ -125,7 +125,7 @@
 
     .description {
         width: 100%;
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .detail {
@@ -137,7 +137,22 @@
 
     .detail div {
         width: 25%;
-           
+    }
+    
+  }
+
+  @media (max-width: 680px) {
+    .workDescriptionDetail {
+        padding-bottom: 20px;
+    }
+
+    .detail h6{
+        white-space: nowrap;
+    }
+
+    .detail div {
+        width: 50%;
+        padding-bottom: 20px;   
     }
     
   }
