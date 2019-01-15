@@ -18,13 +18,19 @@ class Work extends Component {
         transition: "0s",
         workIndex: 0,
         windowWidth: window.innerWidth,
-        imgLoaded: false
+        imagesLoaded: []
     }
 
-    handleImageLoaded = () => {
+    handleImageLoaded = (key) => {
+        console.log(key + ' est charge on peut lafficher')
+        // on met a jour le tableau
+        this.state.imagesLoaded.push(key)
+        
+        // on met le nouveau tableau dans le state
         this.setState({
-            imgLoaded: true
+            imagesLoaded: this.state.imagesLoaded
         })
+        
     }
 
     handleMouseHover = (key) => {
@@ -74,8 +80,32 @@ class Work extends Component {
         });
     }
 
+    getWidth = (width) => {
+        if (this.state.windowWidth <= 680) {
+            width = width * 0.8
+        }
+        else if (this.state.windowWidth > 2400) {
+            width = width * 1.8
+        }
+        return width
+    }
+
+    handleResize = () => {
+        this.setState({
+            windowWidth: window.innerWidth,
+        })
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize)
+    }
+
     render() {
-        console.log(this.state.windowWidth)
+        console.log('this.state.imagesLoaded', this.state.imagesLoaded)
       return (        
         <div className="workWrapper">
             <div className="navbarFirst">
@@ -121,15 +151,16 @@ class Work extends Component {
                                         onMouseOver={()=>this.handleMouseHover(key)} 
                                         onMouseLeave={this.handleMouseLeave}>
                                         <Link to={`/workDetail/${key + 1}`}>
-                                            <img className="workVisuel" onLoad={this.handleImageLoaded.bind(this)} src={require(`../../img/${work.img}`)} 
+                                            <img 
+                                                className={`workVisuel ${this.state.imagesLoaded.indexOf(key) !== -1 ? 'loaded' : 'noLoaded'}`}
+                                                onLoad={ () => this.handleImageLoaded(key) } 
+                                                src={require(`../../img/${work.img}`)} 
                                             alt="" 
                                             style={{
-                                                width: work.width, 
+                                                width: this.getWidth(work.width, this.state.windowWidth), 
                                                 top:work.position.top, 
                                                 left:work.position.left,
                                                 opacity: this.state.workIndex === work.id || key === this.state.activeImg || this.state.activeImg === null ? 1 : 0.1,
-                                                visibility: this.state.imgLoaded === true ? 'visible' : 'hidden',
-                                                transition: 'visibility 3s linear'
                                             }}/>
                                         </Link>
                                     </div>

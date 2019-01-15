@@ -249,7 +249,7 @@ export default {
             subTitle: 'creatives things',
             img: 'ARCHIVE_1.png',
             color: '#7AC643',
-            width: '220px',
+            width: 220,
             position: {
                 top: '79%',
                 left: '5%'
@@ -262,7 +262,7 @@ export default {
             subTitle: 'creatives things',
             img: 'ARCHIVE_2.png',
             color: '#7AC643',
-            width: '140px',
+            width: 140,
             position: {
                 top: '85%',
                 left: '85%'
@@ -275,7 +275,7 @@ export default {
             subTitle: 'application design',
             img: 'BBWALKER_design.png',
             color: '#FF7BA9',
-            width: '68px',
+            width: 68,
             position: {
                 top: '96%',
                 left: '54%'
@@ -288,7 +288,7 @@ export default {
             subTitle: 'leaflet design',
             img: 'Covance_leaflet_1.png',
             color: '#FF7BA9',
-            width: '60px',
+            width: 60,
             position: {
                 top: '11%',
                 left: '59%'
@@ -301,7 +301,7 @@ export default {
             subTitle: 'leaflet design',
             img: 'Covance_leaflet_2.png',
             color: '#FF7BA9',
-            width: '200px',
+            width: 200,
             position: {
                 top: '6%',
                 left: '34%'
@@ -314,7 +314,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'DKNY.png',
             color: '#3FA6F2',
-            width: '275px',
+            width: 275,
             position: {
                 top: '50%',
                 left: '64%'
@@ -327,7 +327,7 @@ export default {
             subTitle: 'T-shirt design • textile graphics',
             img: 'chevignon_1.jpg',
             color: '#F8AF3B',
-            width: '150px',
+            width: 150,
             position: {
                 top: '21%',
                 left: '47%'
@@ -340,7 +340,7 @@ export default {
             subTitle: 'T-shirt design • textile graphics',
             img: 'chevignon_2.jpg',
             color: '#F8AF3B',
-            width: '140px',
+            width: 140,
             position: {
                 top: '33%',
                 left: '34%'
@@ -353,7 +353,7 @@ export default {
             subTitle: 'T-shirt design • textile graphics',
             img: 'chevignon_3.png',
             color: '#F8AF3B',
-            width: '200px',
+            width: 200,
             position: {
                 top: '41%',
                 left: '48%'
@@ -366,7 +366,7 @@ export default {
             subTitle: 'T-shirt design • textile graphics',
             img: 'chevignon_4.jpg',
             color: '#F8AF3B',
-            width: '110px',
+            width: 110,
             position: {
                 top: '16%',
                 left: '23%'
@@ -379,7 +379,7 @@ export default {
             subTitle: 'T-shirt design • textile graphics',
             img: 'chevignon_5.jpg',
             color: '#F8AF3B',
-            width: '120px',
+            width: 120,
             position: {
                 top: '0%',
                 left: '69%'
@@ -392,7 +392,7 @@ export default {
             subTitle: 'T-shirt design • textile graphics',
             img: 'IKKS-SummerTrip_02.jpg',
             color: '#3FA6F2',
-            width: '150px',
+            width: 150,
             position: {
                 top: '22%',
                 left: '74%'
@@ -405,7 +405,7 @@ export default {
             subTitle: 'packaging design',
             img: 'Caroulus_Valentine.png',
             color: '#FF7BA9',
-            width: '55px',
+            width: 55,
             position: {
                 top: '12%',
                 left: '87%'
@@ -418,7 +418,7 @@ export default {
             subTitle: 'packaging design',
             img: 'Warsteiner_valentine.png',
             color: '#FF7BA9',
-            width: '50px',
+            width: 50,
             position: {
                 top: '46%',
                 left: '84%'
@@ -431,7 +431,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'levis_1.png',
             color: '#7AC643',
-            width: '300px',
+            width: 300,
             position: {
                 top: '36%',
                 left: '12%'
@@ -444,7 +444,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'levis_2.jpg',
             color: '#7AC643',
-            width: '120px',
+            width: 120,
             position: {
                 top: '19%',
                 left: '1%'
@@ -457,7 +457,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'levis_3.png',
             color: '#7AC643',
-            width: '230px',
+            width: 230,
             position: {
                 top: '56%',
                 left: '32%'
@@ -470,7 +470,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'levis_4.png',
             color: '#7AC643',
-            width: '140px',
+            width: 140,
             position: {
                 top: '69%',
                 left: '21%'
@@ -483,7 +483,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'levis_5.png',
             color: '#7AC643',
-            width: '120px',
+            width: 120,
             position: {
                 top: '44%',
                 left: '-2%'
@@ -496,7 +496,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'levis_6.png',
             color: '#7AC643',
-            width: '120px',
+            width: 120,
             position: {
                 top: '58%',
                 left: '98%'
@@ -509,7 +509,7 @@ export default {
             subTitle: 'Card design',
             img: 'KEED_1.png',
             color: '#FF7BA9',
-            width: '102px',
+            width: 102,
             position: {
                 top: '35%',
                 left: '64%'
@@ -522,7 +522,7 @@ export default {
             subTitle: 'Card design',
             img: 'KEED_2.png',
             color: '#FF7BA9',
-            width: '102px',
+            width: 102,
             position: {
                 top: '43%',
                 left: '92%'
@@ -535,7 +535,7 @@ export default {
             subTitle: 'Card design',
             img: 'KEED_3.png',
             color: '#FF7BA9',
-            width: '102px',
+            width: 102,
             position: {
                 top: '26%',
                 left: '94%'
@@ -548,7 +548,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'Mokatine_packaging_1.png',
             color: '#F8AF3B',
-            width: '150px',
+            width: 150,
             position: {
                 top: '79%',
                 left: '64%'
@@ -561,7 +561,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'Mokatine_packaging_2.png',
             color: '#F8AF3B',
-            width: '130px',
+            width: 130,
             position: {
                 top: '64%',
                 left: '87%'
@@ -574,7 +574,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'oxbow-2.png',
             color: '#3FA6F2',
-            width: '110px',
+            width: 110,
             position: {
                 top: '92%',
                 left: '24%'
@@ -587,7 +587,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'oxbow-1.png',
             color: '#3FA6F2',
-            width: '170px',
+            width: 170,
             position: {
                 top: '65%',
                 left: '3%'
@@ -600,7 +600,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'Daigondo_resume.png',
             color: '#3FA6F2',
-            width: '80px',
+            width: 80,
             position: {
                 top: '67%',
                 left: '54%'
@@ -613,7 +613,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'TOKYOITER.png',
             color: '#F8AF3B',
-            width: '200px',
+            width: 200,
             position: {
                 top: '82%',
                 left: '37%'
@@ -626,7 +626,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'vedett.png',
             color: '#3FA6F2',
-            width: '67px',
+            width: 67,
             position: {
                 top: '72%',
                 left: '78%'
@@ -639,7 +639,7 @@ export default {
             subTitle: 'T-shirt design',
             img: 'werkstatt.png',
             color: '#3FA6F2',
-            width: '250px',
+            width: 250,
             position: {
                 top: '0%',
                 left: '7%'

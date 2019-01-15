@@ -38,6 +38,17 @@
     position: absolute;  
 }
 
+.noLoaded {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loaded {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
 .workVisuelContainer img:hover{
     -webkit-transform: scale(1.08);
     -ms-transform: scale(1.08);
