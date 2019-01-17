@@ -9,6 +9,15 @@ import QuoteGenerator from '../../components/QuoteGenerator/index';
 
 
 class Home extends Component {
+
+  facebook = () => {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=https://daigondo.com',
+        'facebook-share-dialog',
+        'width=800,height=600'
+    );
+    return false;
+  };
+
     render() {
       return (
         <div className="homeWrapper">

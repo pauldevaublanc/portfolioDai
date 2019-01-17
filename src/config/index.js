@@ -6,8 +6,10 @@ const archive = {
     agency: 'A lot',
     year: '2015-2018',
     visuel: [
-        'ARCHIVE_1.png',
-        'ARCHIVE_2.png'
+        'Archives_1.png',
+        'Archives_2.png',
+        'Archives_3.png',
+        'Archives_4.png'
     ]
 }
 
@@ -28,7 +30,7 @@ const Covance = {
     description: 'I designed the Covance leaflet, a global contract research organization, is the world’s most comprehensive drug development company.',
     role: 'Graphic design',
     projectType: 'Leaflet design',
-    agency: 'Transport',
+    agency: 'Trainspot',
     year: 2017,
     visuel: [
         'Covance_leaflet_1.jpg',
@@ -82,10 +84,10 @@ const Ikks = {
 
 const Konishi = {
     logo: 'KONISHI_logo.png',
-    description: 'For Valentine\'s day 2017 i have been asked by Transport KK to create a packaging design of Liefmans, Gouden Carolus and Warsteiner.',
+    description: 'For Valentine\'s day 2017 i have been asked by Trainspot KK to create a packaging design of Liefmans, Gouden Carolus and Warsteiner.',
     role: 'Illlustration/ Graphic design',
     projectType: 'Packaging design',
-    agency: 'Transport KK',
+    agency: 'Trainspot KK',
     year: 2017,
     visuel: [
         '_Caroulus_Valentine_Square.gif',
@@ -133,7 +135,7 @@ const Mokatine = {
     description: 'I did some proposals for Mokatine packaging design. Caramella Mokatine, also known as the "Arabier", is a coffee-flavoured sweet in a sachetti wrapper.',
     role: 'Graphic design',
     projectType: 'Packaging design',
-    agency: 'Transport',
+    agency: 'Trainspot',
     year: 2018,
     visuel: [
         'Mokatine_packaging_1.jpg',
@@ -186,7 +188,7 @@ const Vedett = {
     description: 'I designed the Japanese Vedett website in a very urban and colorful way. Vedett has 3 bottles for 3 types of beers : Extra White, Extra Blond, Extra Ordinary IPA.',
     role: 'Conception/ Webdesign',
     projectType: 'Website',
-    agency: 'Transport KK',
+    agency: 'Trainspot KK',
     year: 2016,
     visuel: [
         'VEDETT_1.png',
@@ -265,7 +267,7 @@ export default {
             width: 140,
             position: {
                 top: '85%',
-                left: '85%'
+                left: '86%'
             },
             detail: archive
         },
@@ -420,8 +422,8 @@ export default {
             color: '#FF7BA9',
             width: 50,
             position: {
-                top: '46%',
-                left: '84%'
+                top: '43%',
+                left: '82%'
             },
             detail: Konishi
         },
@@ -433,8 +435,8 @@ export default {
             color: '#7AC643',
             width: 300,
             position: {
-                top: '36%',
-                left: '12%'
+                top: '37%',
+                left: '11%'
             },
             detail: Levis
         },
@@ -472,7 +474,7 @@ export default {
             color: '#7AC643',
             width: 140,
             position: {
-                top: '69%',
+                top: '67%',
                 left: '21%'
             },
             detail: Levis
@@ -511,8 +513,8 @@ export default {
             color: '#FF7BA9',
             width: 102,
             position: {
-                top: '35%',
-                left: '64%'
+                top: '31%',
+                left: '62%'
             },
             detail: Keed
         },
@@ -550,7 +552,7 @@ export default {
             color: '#F8AF3B',
             width: 150,
             position: {
-                top: '79%',
+                top: '80%',
                 left: '64%'
             },
             detail: Mokatine
@@ -628,7 +630,7 @@ export default {
             color: '#3FA6F2',
             width: 67,
             position: {
-                top: '72%',
+                top: '76%',
                 left: '78%'
             },
             detail: Vedett
