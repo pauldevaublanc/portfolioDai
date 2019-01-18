@@ -9,7 +9,8 @@ const archive = {
         'Archives_1.png',
         'Archives_2.png',
         'Archives_3.png',
-        'Archives_4.png'
+        'Archives_4.png',
+        'Archives_5.jpg'
     ]
 }
 

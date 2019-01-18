@@ -22,11 +22,8 @@ class Work extends Component {
     }
 
     handleImageLoaded = (key) => {
-        console.log(key + ' est charge on peut lafficher')
-        // on met a jour le tableau
         this.state.imagesLoaded.push(key)
         
-        // on met le nouveau tableau dans le state
         this.setState({
             imagesLoaded: this.state.imagesLoaded
         })
@@ -84,8 +81,14 @@ class Work extends Component {
         if (this.state.windowWidth <= 680) {
             width = width * 0.8
         }
-        else if (this.state.windowWidth > 2400) {
-            width = width * 1.8
+        else if (this.state.windowWidth > 681 && this.state.windowWidth < 1700) {
+            width = width * 1
+        }
+        else if (this.state.windowWidth >= 1700 && this.state.windowWidth < 2000) {
+            width = width * 1.2
+        }
+        else if (this.state.windowWidth >= 2000) {
+            width = width * 1.4
         }
         return width
     }
@@ -105,7 +108,6 @@ class Work extends Component {
     }
 
     render() {
-        console.log('this.state.imagesLoaded', this.state.imagesLoaded)
       return (        
         <div className="workWrapper">
             <div className="navbarFirst">
@@ -134,41 +136,43 @@ class Work extends Component {
                         )
                     })
                 }
-                <div className="mask" onMouseMove={this.handleMouseMove.bind(this)}>
-                    <div className="slider" 
-                        onMouseEnter={()=>this.transition()}
-                        style={{
-                            transition:this.state.transition,
-                            top:this.state.y, 
-                            left:this.state.x
-                        }}>
-                        <Fade big>
-                        <div className="workVisuelContainer">
-                        {
-                            config.works.map((work, key) => {
-                                return(
-                                    <div key={key}    
-                                        onMouseOver={()=>this.handleMouseHover(key)} 
-                                        onMouseLeave={this.handleMouseLeave}>
-                                        <Link to={`/workDetail/${key + 1}`}>
-                                            <img 
-                                                className={`workVisuel ${this.state.imagesLoaded.indexOf(key) !== -1 ? 'loaded' : 'noLoaded'}`}
-                                                onLoad={ () => this.handleImageLoaded(key) } 
-                                                src={require(`../../img/${work.img}`)} 
-                                            alt="" 
-                                            style={{
-                                                width: this.getWidth(work.width, this.state.windowWidth), 
-                                                top:work.position.top, 
-                                                left:work.position.left,
-                                                opacity: this.state.workIndex === work.id || key === this.state.activeImg || this.state.activeImg === null ? 1 : 0.1,
-                                            }}/>
-                                        </Link>
-                                    </div>
-                                )
-                            })
-                        }
+                <div className="maskContainer">
+                    <div className="mask" onMouseMove={this.handleMouseMove.bind(this)}>
+                        <div className="slider" 
+                            onMouseEnter={()=>this.transition()}
+                            style={{
+                                transition:this.state.transition,
+                                top:this.state.y, 
+                                left:this.state.x
+                            }}>
+                            <Fade big>
+                            <div className="workVisuelContainer">
+                            {
+                                config.works.map((work, key) => {
+                                    return(
+                                        <div key={key}    
+                                            onMouseOver={()=>this.handleMouseHover(key)} 
+                                            onMouseLeave={this.handleMouseLeave}>
+                                            <Link to={`/workDetail/${key + 1}`}>
+                                                <img 
+                                                    className={`workVisuel ${this.state.imagesLoaded.indexOf(key) !== -1 ? 'loaded' : 'noLoaded'}`}
+                                                    onLoad={ () => this.handleImageLoaded(key) } 
+                                                    src={require(`../../img/${work.img}`)} 
+                                                alt="" 
+                                                style={{
+                                                    width: this.getWidth(work.width, this.state.windowWidth), 
+                                                    top:work.position.top, 
+                                                    left:work.position.left,
+                                                    opacity: this.state.workIndex === work.id || key === this.state.activeImg || this.state.activeImg === null ? 1 : 0.1,
+                                                }}/>
+                                            </Link>                                           
+                                        </div>
+                                    )
+                                })
+                            }
+                            </div>
+                            </Fade>
                         </div>
-                        </Fade>
                     </div>
                 </div>
                 <div className="footerFirst">

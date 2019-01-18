@@ -1,11 +1,16 @@
-
-
 .workContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: calc(100% - 80px);
     box-sizing: border-box;
+}
+
+.maskContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .mask {
@@ -15,7 +20,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 .slider {
@@ -111,21 +115,17 @@
 }
 
 @media (max-width: 2000px) {
-
     .slider {
         width: calc(100vw + 300px);
         height: calc(100vh + 300px);
     }
-
 }
 
 @media (max-width: 1360px) {
-
     .slider {
         width: calc(100vw + 600px);
         height: calc(100vh + 600px);
     }
-
 }
 
 @media (max-width: 680px) {
