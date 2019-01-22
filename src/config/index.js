@@ -179,8 +179,8 @@ const Tokyoiter = {
     agency: 'Tokyoiter',
     year: 2019,
     visuel: [
-        'The_Tokyoiter_1.png',
-        'The_Tokyoiter_2.jpg'
+        'The_Tokyoiter_1.jpg',
+        'The_Tokyoiter_2.png'
     ]
 }
 
@@ -243,6 +243,84 @@ export default {
             title: 'It was written',
             description: "It was written Nas is certainly the n°1 among hip hop artists according for me. However I also listen to pop music (The Lumineers, Fleetwood Mac) or some Rock'n'roll"
         }
+    ],
+
+    worksMobile: [
+        {
+            id: 1,
+            title: 'Archives',
+            img: 'Archives_3.png'
+        },
+        {
+            id: 3,
+            title: 'BBWalker',
+            img: 'BBWALKER_logo.png'
+        },
+        {
+            id: 5,
+            title: 'Covance',
+            img: 'Covance_leaflet_2.png'
+        },
+        {
+            id: 6,
+            title: 'Dkny',
+            img: 'DKNY_1.png'
+        },
+        {
+            id: 9,
+            title: 'Chevignon',
+            img: 'chevignon_1.jpg'
+        },
+        {
+            id: 12,
+            title: 'Ikks',
+            img: 'IKKS_2.jpg'
+        },
+        {
+            id: 14,
+            title: 'Konishi',
+            img: 'KONISHI_logo.png'
+        },
+        {
+            id: 15,
+            title: 'Levi Strauss',
+            img: 'levis_5.png'
+        },
+        {
+            id: 21,
+            title: 'KEED',
+            img: 'KEED_2.png'
+        },
+        {
+            id: 25,
+            title: 'Mokatine',
+            img: 'Mokatine_packaging_1.png'
+        },
+        {
+            id: 27,
+            title: 'OXBOW',
+            img: 'OXBOW_1.png'
+        },
+        {
+            id: 28,
+            title: 'Resume',
+            img: 'Daigondo_resume.png'
+        },
+        {
+            id: 29,
+            title: 'Tokyoiter',
+            img: 'TOKYOITER.jpg'
+        },
+        {
+            id: 30,
+            title: 'Vedett',
+            img: 'VEDETT_1.png'
+        },
+        {
+            id: 31,
+            title: 'Werkstatt',
+            img: 'werkstatt.png'
+        },
     ],
 
     works: [
@@ -614,7 +692,7 @@ export default {
             id: 13,
             title: 'Tokyoiter',
             subTitle: 'T-shirt design',
-            img: 'TOKYOITER.png',
+            img: 'TOKYOITER.jpg',
             color: '#F8AF3B',
             width: 200,
             position: {

@@ -1,0 +1,18 @@
+.worksWrapperMobile {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.visuelWorkMobile {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+}
+
+.brandWork{
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14px;
+}

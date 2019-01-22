@@ -8,6 +8,7 @@
     padding: 0px 40px;
     font-size: 13px;
     line-height: 18px;
+    box-sizing: border-box;
   }
   
   .infosWrapper {

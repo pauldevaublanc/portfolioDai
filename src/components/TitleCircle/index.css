@@ -1,7 +1,7 @@
 .titleCircle {
     position: relative;
-    width: 90vmin;
-    height: 90vmin;
+    width: 100vmin;
+    height: 100vmin;
     overflow: hidden;
   }
   
@@ -47,15 +47,15 @@
   
   @media (max-width: 1250px) {
     .titleCircle {
-      width: 75vmin;
-      height: 75vmin;
+      width: 85vmin;
+      height: 85vmin;
     }
   }
 
   @media (max-width: 960px) {
     .titleCircle {
-      width: 65vmin;
-      height: 65vmin;
+      width: 75vmin;
+      height: 75vmin;
     }
   }
 

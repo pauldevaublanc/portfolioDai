@@ -6,9 +6,33 @@ import Fade from 'react-reveal/Fade';
 import TitleCircle from '../../components/TitleCircle/index';
 import Clock from '../../components/Clock/index';
 import QuoteGenerator from '../../components/QuoteGenerator/index';
+import WorksMobile from '../../components/WorksMobile';
 
 
 class Home extends Component {
+
+  state = {
+    windowWidth: window.innerWidth
+} 
+
+scrollTop() {
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
+}
+
+componentWillMount() {
+  window.addEventListener('resize', this.handleWindowSizeChange);
+}
+
+componentWillUnmount() {
+  window.removeEventListener('resize', this.handleWindowSizeChange);
+}
+
+handleWindowSizeChange = () => {
+  this.setState({ windowWidth: window.innerWidth });
+};
 
   facebook = () => {
     window.open('https://www.facebook.com/sharer/sharer.php?u=https://daigondo.com',
@@ -19,6 +43,7 @@ class Home extends Component {
   };
 
     render() {
+      const isMobile = this.state.windowWidth <= 680;
       return (
         <div className="homeWrapper">
           <Fade>
@@ -30,7 +55,14 @@ class Home extends Component {
 
             <div className="mainContent">
               <Clock/>
-              <Link to="/work"><TitleCircle/></Link>
+              {
+                isMobile ? 
+                  <div 
+                    onClick={this.scrollTop.bind(this)}>
+                      <TitleCircle/>
+                  </div> : <Link to={"/work"}><TitleCircle/></Link>
+              }
+              
               <QuoteGenerator/>
             </div>
 
@@ -38,11 +70,24 @@ class Home extends Component {
               <div id="fb-share-button" className="noMobile" onClick={()=>this.facebook()}>
                     Share
               </div>
-              <p>* This is Dai Gondo design</p>
+              {
+                isMobile ? 
+                  <img 
+                    onClick={this.scrollTop.bind(this)} 
+                    src={require('../../img/down-arrow.png')} 
+                    style={{margin:"0 auto"}} 
+                    alt="down-arrow"
+                  /> : <p>* This is Dai Gondo design</p>
+              }
               <p className="noMobile" style={{textAlign:'right'}}>Oh yeah !</p>
             </div>
           </Fade>
+          { 
+            isMobile ? <WorksMobile/> : null
+          }
+          
         </div>
+        
       )
     }
 }

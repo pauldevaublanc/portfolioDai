@@ -10,26 +10,32 @@ import Footer from '../../components/Footer/index';
 
 
 class WorkDetail extends Component {
+    
+    state = {
+        windowWidth: window.innerWidth,
+    } 
 
     render() {
+        document.documentElement.scrollTop = 0;
+        const isMobile = this.state.windowWidth <= 680;
     
         const id = this.props.match.params.index - 1
         const logo = config.works[id].detail.logo
         const visuels = config.works[id].detail.visuel
         return (        
-            
             <div className="workDetailWrapper">
                 <Navbar/>
                 <div className="workDetailContainer">
                     <RotateName/>
                     <div className="workContent">
                         <div className="workDescriptionDetail">
-                            <Fade bottom cascade>
+                            <Fade bottom>
                             <div className="description">
                                 <img src={require(`../../img/${logo}`)} alt="" />
                                 <p>{config.works[id].detail.description}</p>
                             </div>
-
+                            </Fade>
+                            <Fade bottom cascade>
                             <div className="detail">
                                 <div>
                                     <h6>Role</h6>
@@ -54,17 +60,19 @@ class WorkDetail extends Component {
                             </Fade>   
                         </div> 
                         
-                        <div className="visuelWork">
-                            
+                        <div className="visuelWork">  
                             {
-                                visuels.map((img, key) => 
-                                <Fade key={key} bottom>
-                                    <img  src={require(`../../img/${img}`)} alt="" />
-                                </Fade>
-                                )
+                                visuels.map((img, key) => {
+                                    return(
+                                        <div key={key}>
+                                            <Fade bottom>
+                                                <img src={require(`../../img/${img}`)} alt="" />
+                                            </Fade>
+                                        </div>
+                                    )
+                                })
                             }
-                            
-                            <Link  to="/work">
+                            <Link to={isMobile ? "/" : "/work"}>
                                 <Fade bottom>
                                     <div className="link box-link">
                                         <p className="custom-underline">back to all projects</p>
@@ -72,9 +80,6 @@ class WorkDetail extends Component {
                                 </Fade>
                             </Link>  
                         </div>
-                        
-                        
-                        
                     </div> 
                 </div>  
                 <Footer/> 

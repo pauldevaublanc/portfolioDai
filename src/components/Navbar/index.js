@@ -15,7 +15,8 @@ class Navbar extends Component {
     }
 
     state = {
-        menuOpen: false
+        menuOpen: false,
+        windowWidth: window.innerWidth
     }
 
     handleClick = () => {
@@ -48,15 +49,14 @@ class Navbar extends Component {
     
 
 
-
-
     render() {
-        
+        const isMobile = this.state.windowWidth <= 680;
+
         return (
             <div className="navbarWrapper" style={this.props.style}>
                     {this.state.menuOpen? <NavbarMobile/> : null }
                 <div className="navbarElements transitionColor">
-                    <Link to="/work"><p data-hover="Work">Work</p></Link>
+                    <Link to={isMobile ? "/" : "/work"}><p data-hover="Work">Work</p></Link>
                     <Link to="/about"><p data-hover="Profile">Profile</p></Link>
                 </div>
 
