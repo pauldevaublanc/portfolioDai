@@ -43,6 +43,7 @@ handleWindowSizeChange = () => {
   };
 
     render() {
+      document.documentElement.scrollTop = 0;
       const isMobile = this.state.windowWidth <= 680;
       return (
         <div className="homeWrapper">
@@ -75,7 +76,7 @@ handleWindowSizeChange = () => {
                   <img 
                     onClick={this.scrollTop.bind(this)} 
                     src={require('../../img/down-arrow.png')} 
-                    style={{margin:"0 auto"}} 
+                    style={{margin:"0px auto 30px"}} 
                     alt="down-arrow"
                   /> : <p>* This is Dai Gondo design</p>
               }

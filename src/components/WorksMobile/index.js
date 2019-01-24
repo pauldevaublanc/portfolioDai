@@ -12,9 +12,6 @@ class WorksMobile extends Component {
         workIndex: 0,
     }
 
-    keyIndex (key) {
-        console.log(key)
-    }
 
     render() {
       return (        
@@ -26,10 +23,13 @@ class WorksMobile extends Component {
                             <div  key={key}>
                                 <Link to={`/workDetail/${work.id}`}>
                                     <div className="work">
-                                        <img 
-                                            className="visuelWorkMobile"
-                                            src={require(`../../img/${work.img}`)} 
-                                            alt=""/>
+                                        <div className="visuelWorkMobileWrapper">
+                                            <img 
+                                                className="visuelWorkMobile"
+                                                src={require(`../../img/${work.img}`)} 
+                                                alt=""/>
+                                        </div>
+                                        
                                         <div className="brandWork">{work.title}</div>
                                     </div>
                                 </Link>                                           

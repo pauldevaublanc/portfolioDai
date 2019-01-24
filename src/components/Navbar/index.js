@@ -16,7 +16,9 @@ class Navbar extends Component {
 
     state = {
         menuOpen: false,
-        windowWidth: window.innerWidth
+        windowWidth: window.innerWidth,
+        isTop: true,
+        isMobile: false
     }
 
     handleClick = () => {
@@ -34,12 +36,36 @@ class Navbar extends Component {
        }
     }
 
+
     componentDidUpdate(prevProps, prevState) {
         this.handleResize()
     }    
 
+
+    multiEvent = (element, eventNames, listener) => {
+        var events = eventNames.split(' ');
+        for (var i=0, iLen=events.length; i<iLen; i++) {
+            element.addEventListener(events[i], listener, false);
+        }
+    }
+
     componentDidMount() {
-        window.addEventListener("resize", this.handleResize)                            
+        window.addEventListener("resize", this.handleResize);
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 50;
+            if (isTop !== this.state.isTop){
+                this.setState({isTop})
+            }
+        }) 
+
+        this.multiEvent(window, 'load resize click', () => {
+            const isMobile = window.innerWidth < 680;
+            if (isMobile !== this.state.isMobile){
+                this.setState({isMobile})
+            }
+        })  
+        
+         
     }
 
     componentWillUnmount() {
@@ -51,9 +77,8 @@ class Navbar extends Component {
 
     render() {
         const isMobile = this.state.windowWidth <= 680;
-
         return (
-            <div className="navbarWrapper" style={this.props.style}>
+            <div onClick={this.handleScroll} className={'navbarWrapper'} style={{transition:'0.6s', backgroundColor: this.state.isTop  || !this.state.isMobile ? 'transparent': 'white'}}>
                     {this.state.menuOpen? <NavbarMobile/> : null }
                 <div className="navbarElements transitionColor">
                     <Link to={isMobile ? "/" : "/work"}><p data-hover="Work">Work</p></Link>

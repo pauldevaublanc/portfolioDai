@@ -118,8 +118,11 @@
     }
 }
 
-
 @media (max-width: 680px) {
+    .contentWrapper {
+        padding-top: 60px;
+    }
+    
     .biography {
         display: block;
     }

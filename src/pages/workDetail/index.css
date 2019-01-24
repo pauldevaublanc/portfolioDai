@@ -142,6 +142,10 @@
   }
 
   @media (max-width: 680px) {
+    .workDetailContainer {
+        padding-top: 60px;
+    }
+
     .workDescriptionDetail {
         padding-bottom: 20px;
     }

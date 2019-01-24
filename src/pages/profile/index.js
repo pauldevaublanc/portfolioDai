@@ -13,7 +13,7 @@ class Profile extends Component {
     render() {
       return (
         <div className="profileWrapper">
-          <Navbar />
+          <Navbar/>
           <div style={{display:'flex'}}>
             <RotateName/>
             <div className="contentWrapper">

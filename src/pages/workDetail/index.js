@@ -29,12 +29,14 @@ class WorkDetail extends Component {
                     <RotateName/>
                     <div className="workContent">
                         <div className="workDescriptionDetail">
-                            <Fade bottom>
+                            
                             <div className="description">
                                 <img src={require(`../../img/${logo}`)} alt="" />
-                                <p>{config.works[id].detail.description}</p>
+                                <Fade bottom>
+                                    <p>{config.works[id].detail.description}</p>
+                                </Fade>
                             </div>
-                            </Fade>
+                            
                             <Fade bottom cascade>
                             <div className="detail">
                                 <div>
