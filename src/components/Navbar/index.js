@@ -78,23 +78,25 @@ class Navbar extends Component {
     render() {
         const isMobile = this.state.windowWidth <= 680;
         return (
-            <div onClick={this.handleScroll} className={'navbarWrapper'} style={{transition:'0.6s', backgroundColor: this.state.isTop  || !this.state.isMobile ? 'transparent': 'white'}}>
-                    {this.state.menuOpen? <NavbarMobile/> : null }
-                <div className="navbarElements transitionColor">
-                    <Link to={isMobile ? "/" : "/work"}><p data-hover="Work">Work</p></Link>
-                    <Link to="/about"><p data-hover="Profile">Profile</p></Link>
+            <div style={{width:'100vw'}}>
+                <div onClick={this.handleScroll} className={`navbarWrapper ${this.state.isTop  || !this.state.isMobile ? '': 'bgGrey'}`} style={this.props.style}>
+                        {this.state.menuOpen? <NavbarMobile/> : null }
+                    <div className="navbarElements transitionColor">
+                        <Link to={isMobile ? "/" : "/work"}><p data-hover="Work">Work</p></Link>
+                        <Link to="/about"><p data-hover="Profile">Profile</p></Link>
+                    </div>
+
+                    
+
+                    <Link to="/"><div className="name">Dai Gondo</div></Link>
+
+                    <div onClick={this.handleClick} data={this.state} className={`burgerMenuWrapper ${this.state.menuOpen ? 'open' : ''}`}>
+                        <div className="bar1"></div>
+                        <div className="bar2"></div>
+                        <div className="bar3"></div>
+                    </div>
+                    
                 </div>
-
-                
-
-                <Link to="/"><div className="name">Dai Gondo</div></Link>
-
-                <div onClick={this.handleClick} data={this.state} className={`burgerMenuWrapper ${this.state.menuOpen ? 'open' : ''}`}>
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
-                </div>
-                
             </div>
         );
     }

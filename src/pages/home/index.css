@@ -40,9 +40,13 @@
   }
 
   @media (max-width: 680px) {
+    .mainContent {
+      height: 90vh;
+    }
 
     .homeWrapper {
       padding: 0;
+
     }
     .infosWrapper p {
       width: 100%;

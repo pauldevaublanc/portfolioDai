@@ -7,6 +7,9 @@ import TitleCircle from '../../components/TitleCircle/index';
 import Clock from '../../components/Clock/index';
 import QuoteGenerator from '../../components/QuoteGenerator/index';
 import WorksMobile from '../../components/WorksMobile';
+import Navbar from '../../components/Navbar';
+
+import TitleCircleMobile from '../../components/TitleCircleMobile';
 
 
 class Home extends Component {
@@ -47,12 +50,18 @@ handleWindowSizeChange = () => {
       const isMobile = this.state.windowWidth <= 680;
       return (
         <div className="homeWrapper">
-          <Fade>
-            <div className="infosWrapper">
-              <p className="noMobile" style={{textAlign:'left'}}>Bonjour</p>
-              <p className="titleMobile"><span className="noMobile">My name is </span>Dai Gondo</p>
-              <p className="noMobile" style={{textAlign:'right'}}>Illustrator</p>
-            </div>
+        
+          
+            {
+              isMobile ? <Navbar style={{marginTop:'0px', marginLeft:'0px', width:'100vw'}}/> :
+              <Fade><div className="infosWrapper">
+                <p className="noMobile" style={{textAlign:'left'}}>Bonjour</p>
+                <p className="titleMobile"><span className="noMobile">My name is </span>Dai Gondo</p>
+                <p className="noMobile" style={{textAlign:'right'}}>Illustrator</p>
+              </div></Fade>
+            }
+            
+            <Fade>
 
             <div className="mainContent">
               <Clock/>
@@ -60,8 +69,8 @@ handleWindowSizeChange = () => {
                 isMobile ? 
                   <div 
                     onClick={this.scrollTop.bind(this)}>
-                      <TitleCircle/>
-                  </div> : <Link to={"/work"}><TitleCircle/></Link>
+                      <TitleCircleMobile/>
+                  </div> : <Link to={"/work"} ><TitleCircle/></Link>
               }
               
               <QuoteGenerator/>
@@ -76,7 +85,7 @@ handleWindowSizeChange = () => {
                   <img 
                     onClick={this.scrollTop.bind(this)} 
                     src={require('../../img/down-arrow.png')} 
-                    style={{margin:"0px auto 30px"}} 
+                    style={{margin:"0px auto 40px", width:20}} 
                     alt="down-arrow"
                   /> : <p>* This is Dai Gondo design</p>
               }

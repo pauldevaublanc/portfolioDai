@@ -160,7 +160,7 @@ const Oxbow = {
 }
 
 const Resume = {
-    logo: 'RESUME_logo.png',
+    logo: 'RESUME_LOGO.png',
     description: 'Because we all need a resume, I have made mine. I think Self-promotion is essential to a graphic designer’s success. I tried to make it in a personal and original way as possible.',
     role: 'Graphic design',
     projectType: 'Leaflet design',
@@ -247,54 +247,59 @@ export default {
 
     worksMobile: [
         {
+            id: 15,
+            title: 'Levi Strauss',
+            img: 'levis-horizontal.png'
+        },
+        {
             id: 9,
             title: 'Chevignon',
             img: 'chevignon_1.jpg'
         },
         {
-            id: 15,
-            title: 'Levi Strauss',
-            img: 'levis_5.png'
-        },
-        {
-            id: 27,
-            title: 'OXBOW',
-            img: 'OXBOW_1.png'
-        },
-        {
-            id: 21,
-            title: 'KEED',
-            img: 'KEED_1.png'
-        },
-        {
-            id: 6,
-            title: 'Dkny',
-            img: 'DKNY_1.png'
-        },
-        {
-            id: 25,
-            title: 'Mokatine',
-            img: 'Mokatine_packaging_1.png'
-        },
-        {
             id: 29,
             title: 'Tokyoiter',
-            img: 'The_Tokyoiter_2.png'
-        },
-        {
-            id: 14,
-            title: 'Konishi',
-            img: 'KONISHI_logo.png'
+            img: 'theTokyoiter-horizontal.png'
         },
         {
             id: 31,
             title: 'Werkstatt',
-            img: 'werkstatt.png'
+            img: 'werkstatt-horizontal.jpg'
         },
+        {
+            id: 21,
+            title: 'KEED',
+            img: 'keed-horizontal.jpg'
+        },
+        {
+            id: 6,
+            title: 'Dkny',
+            img: 'dkny-horizontal.jpg'
+        },
+        {
+            id: 25,
+            title: 'Mokatine',
+            img: 'mokatine-horizontal.jpg'
+        },    
+        {
+            id: 3,
+            title: 'BBWalker',
+            img: 'BBWALKER_design.jpg'
+        },
+        {
+            id: 28,
+            title: 'Resume',
+            img: 'resume-horizontal.jpg'
+        }, 
         {
             id: 30,
             title: 'Vedett',
-            img: 'VEDETT_1.png'
+            img: 'vedett-horizontal.png'
+        },
+        {
+            id: 14,
+            title: 'Konishi',
+            img: 'konishi-horizontal.png'
         },
         {
             id: 5,
@@ -302,9 +307,9 @@ export default {
             img: 'Covance_leaflet_2.jpg'
         },
         {
-            id: 28,
-            title: 'Resume',
-            img: 'Daigondo_resume_1.jpg'
+            id: 27,
+            title: 'OXBOW',
+            img: 'oxbow-horizontal.jpg'
         },
         {
             id: 12,
@@ -312,14 +317,9 @@ export default {
             img: 'IKKS_2.jpg'
         },
         {
-            id: 3,
-            title: 'BBWalker',
-            img: 'BBWALKER_design.jpg'
-        },
-        {
             id: 1,
             title: 'Archives',
-            img: 'Archives_3.png'
+            img: 'Archives_1.png'
         }
     ],
 

@@ -1,0 +1,28 @@
+.homeWrapperMobile {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.titleCircleMobile {
+  width: 70%;
+  margin: 0 auto;
+  height: 100vh;
+  object-fit: contain;
+  cursor: pointer;
+  animation:spin 20s linear infinite;
+}
+
+@keyframes spin {
+  100% {transform:rotate(360deg);}
+}
+
+
+@media (max-width: 500px) {
+
+  .titleCircleMobile {
+    width: 85%;
+  }
+  
+}
