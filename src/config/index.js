@@ -284,7 +284,7 @@ export default {
         {
             id: 3,
             title: 'BBWalker',
-            img: 'BBWALKER_design.jpg'
+            img: 'bbwalker-horizontal.jpg'
         },
         {
             id: 28,

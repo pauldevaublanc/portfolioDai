@@ -18,12 +18,22 @@ class Home extends Component {
     windowWidth: window.innerWidth
 } 
 
-scrollTop() {
+scrollOnClick() {
   window.scrollTo({
     top: window.innerHeight,
     behavior: 'smooth'
   });
 }
+
+ScrollOnLoad() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+
 
 componentWillMount() {
   window.addEventListener('resize', this.handleWindowSizeChange);
@@ -46,10 +56,10 @@ handleWindowSizeChange = () => {
   };
 
     render() {
-      document.documentElement.scrollTop = 0;
+      document.documentElement.scrollOnClick = 0;
       const isMobile = this.state.windowWidth <= 680;
       return (
-        <div className="homeWrapper">
+        <div onLoad={this.ScrollOnLoad.bind(this)} className="homeWrapper">
         
           
             {
@@ -68,7 +78,7 @@ handleWindowSizeChange = () => {
               {
                 isMobile ? 
                   <div 
-                    onClick={this.scrollTop.bind(this)}>
+                    onClick={this.scrollOnClick.bind(this)}>
                       <TitleCircleMobile/>
                   </div> : <Link to={"/work"} ><TitleCircle/></Link>
               }
@@ -83,7 +93,7 @@ handleWindowSizeChange = () => {
               {
                 isMobile ? 
                   <img 
-                    onClick={this.scrollTop.bind(this)} 
+                    onClick={this.scrollOnClick.bind(this)} 
                     src={require('../../img/down-arrow.png')} 
                     style={{margin:"0px auto 40px", width:20}} 
                     alt="down-arrow"
