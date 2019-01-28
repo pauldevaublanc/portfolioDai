@@ -1,6 +1,6 @@
 const archive = {
     logo: 'ARCHIVE_logo.png',
-    description: 'This is a lot of graphic creation / illustrations for many brands and agency i have made since 2015.',
+    description: 'Here is a selection of multidisciplinary graphic creation, illustrations and drawing for many brands (Verbaudet, Bizzbee, Unkut, d\'Artigny) / agency and side project i have made since 2015.',
     role: 'Illustration/ Graphic design',
     projectType: 'All',
     agency: 'A lot',
@@ -148,7 +148,7 @@ const Oxbow = {
     logo: 'OXBOW_logo.png',
     description: 'I did some creative tee shirts and pattern for Oxbow. It is a famous french brand of clothing and athletic equipment involved in five sports: surfing, windsurfing, kitesurfing, snowboarding, and skiing.',
     role: 'Illustration',
-    projectType: 'T-shirt Design',
+    projectType: 'textile design',
     agency: 'Sublim Design',
     year: 2016,
     visuel: [
@@ -217,10 +217,10 @@ export default {
     hobbies: [
         {
             name: 'Call of Duty',
-            supName: 'Game',
+            supName: 'Games',
             img: 'interest1.png',
-            title: 'Call of Duty',
-            description: 'Sometimes I play video games such as Call of Duty with friends, and kick some amazing goals in Fifa'
+            title: 'Hobbies',
+            description: 'When I am not drawing or visiting galleries, I play video games (like Call of Duty).I also play soccer with friends where I score amazing goals'
         },
         {
             name: 'Animals',
@@ -234,14 +234,14 @@ export default {
             supName: 'Movie',
             img: 'interest3.png',
             title: 'Great Scott !',
-            description: '«Back to the future» is probably my favorite movie. But I also show a taste for prison movies or any good flicks with amazing zombies'
+            description: 'I like the design and the univers of the 80\'s, that\'s why «Back to the future» is probably my favorite movie.'
         },
         {
             name: 'Nas',
             supName: 'Singer',
             img: 'interest4.png',
             title: 'It was written',
-            description: "It was written Nas is certainly the n°1 among hip hop artists according for me. However I also listen to pop music (The Lumineers, Fleetwood Mac) or some Rock'n'roll"
+            description: "Nas is certainly the n°1 among hip hop artists according for me. However, I listen and also get inspired by pop music (The Lumineers, Fleetwood Mac) or rock'n'roll."
         }
     ],
 
@@ -254,7 +254,7 @@ export default {
         {
             id: 9,
             title: 'Chevignon',
-            img: 'chevignon_1.jpg'
+            img: 'chevignon-horizontal.jpg'
         },
         {
             id: 29,
@@ -268,7 +268,7 @@ export default {
         },
         {
             id: 21,
-            title: 'KEED',
+            title: 'Keed',
             img: 'keed-horizontal.jpg'
         },
         {
@@ -294,7 +294,7 @@ export default {
         {
             id: 30,
             title: 'Vedett',
-            img: 'vedett-horizontal.png'
+            img: 'vedett-horizontal.jpg'
         },
         {
             id: 14,
@@ -308,7 +308,7 @@ export default {
         },
         {
             id: 27,
-            title: 'OXBOW',
+            title: 'Oxbow',
             img: 'oxbow-horizontal.jpg'
         },
         {
@@ -318,7 +318,7 @@ export default {
         },
         {
             id: 1,
-            title: 'Archives',
+            title: 'Archive',
             img: 'Archives_1.png'
         }
     ],
@@ -326,7 +326,7 @@ export default {
     works: [
         {
             id: 1,
-            title: 'Archives',
+            title: 'Archive',
             subTitle: 'creatives things',
             img: 'ARCHIVE_1.png',
             color: '#7AC643',
@@ -339,7 +339,7 @@ export default {
         },
         {
             id: 1,
-            title: 'Archives',
+            title: 'Archive',
             subTitle: 'creatives things',
             img: 'ARCHIVE_2.png',
             color: '#7AC643',
@@ -586,8 +586,8 @@ export default {
         },
         {
             id: 9,
-            title: 'KEED',
-            subTitle: 'Card design',
+            title: 'Keed',
+            subTitle: 'card design',
             img: 'KEED_1.png',
             color: '#FF7BA9',
             width: 102,
@@ -599,8 +599,8 @@ export default {
         },
         {
             id: 9,
-            title: 'KEED',
-            subTitle: 'Card design',
+            title: 'Keed',
+            subTitle: 'card design',
             img: 'KEED_2.png',
             color: '#FF7BA9',
             width: 102,
@@ -612,8 +612,8 @@ export default {
         },
         {
             id: 9,
-            title: 'KEED',
-            subTitle: 'Card design',
+            title: 'Keed',
+            subTitle: 'card design',
             img: 'KEED_3.png',
             color: '#FF7BA9',
             width: 102,
@@ -626,7 +626,7 @@ export default {
         {
             id: 10,
             title: 'Mokatine',
-            subTitle: 'T-shirt design',
+            subTitle: 'packaging design',
             img: 'Mokatine_packaging_1.png',
             color: '#F8AF3B',
             width: 150,
@@ -639,7 +639,7 @@ export default {
         {
             id: 10,
             title: 'Mokatine',
-            subTitle: 'T-shirt design',
+            subTitle: 'packaging design',
             img: 'Mokatine_packaging_2.png',
             color: '#F8AF3B',
             width: 130,
@@ -651,8 +651,8 @@ export default {
         },
         {
             id: 11,
-            title: 'OXBOW',
-            subTitle: 'T-shirt design',
+            title: 'Oxbow',
+            subTitle: 'textile design',
             img: 'oxbow-2.png',
             color: '#3FA6F2',
             width: 110,
@@ -664,8 +664,8 @@ export default {
         },
         {
             id: 11,
-            title: 'OXBOW',
-            subTitle: 'T-shirt design',
+            title: 'Oxbow',
+            subTitle: 'textile design',
             img: 'oxbow-1.png',
             color: '#3FA6F2',
             width: 170,
@@ -678,7 +678,7 @@ export default {
         {
             id: 12,
             title: 'Resume',
-            subTitle: 'T-shirt design',
+            subTitle: 'leaflet design',
             img: 'Daigondo_resume.png',
             color: '#3FA6F2',
             width: 80,
@@ -691,7 +691,7 @@ export default {
         {
             id: 13,
             title: 'Tokyoiter',
-            subTitle: 'T-shirt design',
+            subTitle: 'poster design',
             img: 'TOKYOITER.jpg',
             color: '#F8AF3B',
             width: 200,
@@ -704,7 +704,7 @@ export default {
         {
             id: 14,
             title: 'Vedett',
-            subTitle: 'T-shirt design',
+            subTitle: 'webdesign • illustration',
             img: 'vedett.png',
             color: '#3FA6F2',
             width: 67,
@@ -717,7 +717,7 @@ export default {
         {
             id: 15,
             title: 'Werkstatt',
-            subTitle: 'T-shirt design',
+            subTitle: 'pencil drawing • poster',
             img: 'werkstatt.png',
             color: '#3FA6F2',
             width: 250,

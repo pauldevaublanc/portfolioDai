@@ -30,7 +30,7 @@ class Profile extends Component {
                   <div className="biographyWrapper">
                     <h2>Biography/en<br/>-</h2>
                     <h3>Dai Gondo</h3>
-                    <p>Bonjour, my name is Dai Gondo. I am a French & Japanese creative multidisciplinary designer with a special love for illustration and fashion, currently based in Tokyo. I take my inspiration from urban settings, exotic flowers and beautiful sky tones.<br/>As far back as I can remember I have always been drawing a lot. Today, I am happy to have turned my passion into a job. <br/>Merci</p>
+                    <p>Bonjour, my name is Dai Gondo. I am a French & Japanese creative multidisciplinary designer with a special love for illustration and fashion, currently based between Tokyo and Paris. I take my inspiration from urban settings, exotic flowers and beautiful sky tones.<br/>As far back as I can remember I have always been drawing a lot. Today, I am happy to have turned my passion into a job. <br/>Merci</p>
                   </div>
                   
                   

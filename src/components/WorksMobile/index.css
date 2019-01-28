@@ -19,11 +19,11 @@
     object-fit: cover;
 }
 
-
-.brandWork{
-    text-align: left;
-    text-transform: uppercase;
-    padding: 10px;
+.brandWorkWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 14px;
-    margin-bottom: 10px;
+    padding: 8px 12px;
 }
+

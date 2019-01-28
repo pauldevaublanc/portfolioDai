@@ -25,13 +25,6 @@ scrollOnClick() {
   });
 }
 
-ScrollOnLoad() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
 
 
 
@@ -59,7 +52,7 @@ handleWindowSizeChange = () => {
       document.documentElement.scrollOnClick = 0;
       const isMobile = this.state.windowWidth <= 680;
       return (
-        <div onLoad={this.ScrollOnLoad.bind(this)} className="homeWrapper">
+        <div className="homeWrapper">
         
           
             {
@@ -95,7 +88,7 @@ handleWindowSizeChange = () => {
                   <img 
                     onClick={this.scrollOnClick.bind(this)} 
                     src={require('../../img/down-arrow.png')} 
-                    style={{margin:"0px auto 40px", width:20}} 
+                    style={{margin:"0px auto 70px", width:20}} 
                     alt="down-arrow"
                   /> : <p>* This is Dai Gondo design</p>
               }
