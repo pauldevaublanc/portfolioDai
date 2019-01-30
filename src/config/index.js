@@ -220,7 +220,7 @@ export default {
             supName: 'Games',
             img: 'interest1.png',
             title: 'Hobbies',
-            description: 'When I am not drawing or visiting galleries, I play video games (like Call of Duty).I also play soccer with friends where I score amazing goals'
+            description: 'When I am not drawing or visiting galleries, I play video games (like Call of Duty). I also play soccer with friends where I score amazing goals.'
         },
         {
             name: 'Animals',

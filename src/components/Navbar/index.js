@@ -36,6 +36,13 @@ class Navbar extends Component {
        }
     }
 
+    handleScroll = () => {
+        const isTop = window.scrollY < 50;
+        if (isTop !== this.state.isTop){
+            this.setState({isTop})
+        }
+    }
+
 
     componentDidUpdate(prevProps, prevState) {
         this.handleResize()
@@ -51,12 +58,7 @@ class Navbar extends Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.handleResize);
-        document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 50;
-            if (isTop !== this.state.isTop){
-                this.setState({isTop})
-            }
-        }) 
+        document.addEventListener('scroll', this.handleScroll); 
 
         this.multiEvent(window, 'load resize click', () => {
             const isMobile = window.innerWidth < 680;
@@ -70,7 +72,8 @@ class Navbar extends Component {
 
     componentWillUnmount() {
         enableScroll()
-        window.removeEventListener('resize', this.handleResize)
+        window.removeEventListener('resize', this.handleResize);
+        document.removeEventListener('scroll', this.handleScroll);
     }
     
 
@@ -79,7 +82,10 @@ class Navbar extends Component {
         const isMobile = this.state.windowWidth <= 680;
         return (
             <div style={{width:'100vw'}}>
-                <div onClick={this.handleScroll} className={`navbarWrapper ${this.state.isTop  || !this.state.isMobile ? '': 'bgGrey'}`} style={this.props.style}>
+                <div 
+                    onClick={this.handleScroll} 
+                    className={`navbarWrapper ${this.state.isTop  || !this.state.isMobile ? '': 'bgGrey'}`} 
+                    style={this.props.style}>
                         {this.state.menuOpen? <NavbarMobile/> : null }
                     <div className="navbarElements transitionColor">
                         <Link to={isMobile ? "/" : "/work"}><p data-hover="Work">Work</p></Link>
@@ -90,7 +96,10 @@ class Navbar extends Component {
 
                     <Link to="/"><div className="name">Dai Gondo</div></Link>
 
-                    <div onClick={this.handleClick} data={this.state} className={`burgerMenuWrapper ${this.state.menuOpen ? 'open' : ''}`}>
+                    <div 
+                        onClick={this.handleClick} 
+                        data={this.state} 
+                        className={`burgerMenuWrapper ${this.state.menuOpen ? 'open' : ''}`}>
                         <div className="bar1"></div>
                         <div className="bar2"></div>
                         <div className="bar3"></div>

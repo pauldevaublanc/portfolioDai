@@ -7,28 +7,48 @@ import Fade from 'react-reveal/Fade';
 import Navbar from '../../components/Navbar/index';
 import RotateName from '../../components/RotateName/index';
 import Footer from '../../components/Footer/index';
+import Loader from '../../components/Loader/index';
 
 
 class WorkDetail extends Component {
     
     state = {
         windowWidth: window.innerWidth,
+        totalImages: 0,
+        imagesLoaded: 0
     } 
 
+    handleLoad = () => {
+        this.setState({
+            imagesLoaded: this.state.imagesLoaded + 1
+        })
+    }
+
+    componentDidMount() {
+        const id = this.props.match.params.index - 1
+        const visuels = config.works[id].detail.visuel
+        const totalImg = visuels.length
+        this.setState({
+            totalImages: totalImg
+        })
+    }
+
     render() {
-        document.documentElement.scrollTop = 0;
         const isMobile = this.state.windowWidth <= 680;
-    
         const id = this.props.match.params.index - 1
         const logo = config.works[id].detail.logo
         const visuels = config.works[id].detail.visuel
-        return (        
+        const loader = this.state.totalImages === 0 || this.state.imagesLoaded < this.state.totalImages
+        
+        return (       
+            <div>
+            { loader && <Loader/> }
             <div className="workDetailWrapper">
                 <Navbar/>
                 <div className="workDetailContainer">
                     <RotateName/>
-                    <div className="workContent">
-                        <div className="workDescriptionDetail">
+                    <div className="workContent" style={{ visibility: loader ? 'hidden' : 'visible' }}>
+                        <div className="workDescriptionDetail" >
                             
                             <div className="description">
                                 <img src={require(`../../img/${logo}`)} alt="" />
@@ -68,7 +88,7 @@ class WorkDetail extends Component {
                                     return(
                                         <div key={key}>
                                             <Fade bottom>
-                                                <img src={require(`../../img/${img}`)} alt="" />
+                                                <img onLoad={()=>this.handleLoad()} src={require(`../../img/${img}`)} alt="" />
                                             </Fade>
                                         </div>
                                     )
@@ -85,6 +105,7 @@ class WorkDetail extends Component {
                     </div> 
                 </div>  
                 <Footer/> 
+            </div>
             </div>
         )
     }

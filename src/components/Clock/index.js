@@ -9,13 +9,21 @@ class Clock extends Component {
     japDate: moment().tz('Asia/Tokyo').format("MMMM Do YYYY")
   }
   
+  updateTime = () => {
+    this.setState({
+      japHour: moment().tz('Asia/Tokyo').format("h:mm:ss a"),
+      japDate: moment().tz('Asia/Tokyo').format("MMMM Do YYYY")
+    })
+  }
+
+  interval = null
+
   componentDidMount() {
-    setInterval(()=> {
-      this.setState({
-          japHour: moment().tz('Asia/Tokyo').format("h:mm:ss a"),
-          japDate: moment().tz('Asia/Tokyo').format("MMMM Do YYYY")
-        })
-    }, 1000)
+    this.interval = setInterval(this.updateTime, 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval)
   }
 
   render() {

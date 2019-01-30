@@ -7,6 +7,7 @@ import Fade from 'react-reveal/Fade';
 import Navbar from '../../components/Navbar/index';
 import RotateName from '../../components/RotateName/index';
 import Footer from '../../components/Footer/index';
+import Loader from '../../components/Loader/index';
 
 
 class Work extends Component {
@@ -18,7 +19,8 @@ class Work extends Component {
         transition: "0s",
         workIndex: 0,
         windowWidth: window.innerWidth,
-        imagesLoaded: []
+        imagesLoaded: [],
+        totalImages: config.works.length
     }
 
     handleImageLoaded = (key) => {
@@ -108,12 +110,15 @@ class Work extends Component {
     }
 
     render() {
+        const loader = this.state.imagesLoaded.length !== this.state.totalImages
       return (        
+        <div>
+            { loader && <Loader/> }
         <div className="workWrapper">
             <div className="navbarFirst">
                 <Navbar/>
             </div>
-            <div className="workContainer">
+            <div className="workContainer" style={{ visibility: loader ? 'hidden' : 'visible' }}>
                 <div className="rotateNameFirst" >
                     <RotateName/>
                 </div>
@@ -179,6 +184,7 @@ class Work extends Component {
                     <Footer/>
                 </div>
             </div>
+        </div>
         </div>
       )
     }

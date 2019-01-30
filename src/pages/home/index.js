@@ -17,7 +17,8 @@ class Home extends Component {
 
   state = {
     windowWidth: window.innerWidth,
-    isLoading: true
+    isLoading: true,
+    imagesLoaded: false
 } 
 
 scrollOnClick() {
@@ -43,6 +44,16 @@ handleWindowSizeChange = () => {
   this.setState({ windowWidth: window.innerWidth });
 };
 
+getMobileView = () => {
+  const isMobile = this.state.windowWidth <= 680;
+  let content = null;
+  if (isMobile) {
+    content= <WorksMobile  onImagesLoaded={()=> {this.setState({imagesLoaded:true})}}/>
+  }
+
+  return content
+}
+
   facebook = () => {
     window.open('https://www.facebook.com/sharer/sharer.php?u=https://daigondo.com',
         'facebook-share-dialog',
@@ -52,7 +63,6 @@ handleWindowSizeChange = () => {
   };
 
     render() {
-      document.documentElement.scrollOnClick = 0;
       const isMobile = this.state.windowWidth <= 680;
       return (
         <div className="homeWrapper">
@@ -94,9 +104,7 @@ handleWindowSizeChange = () => {
               <p className="noMobile" style={{textAlign:'right'}}>Oh yeah !</p>
             </div>
           </Fade>
-          { 
-            isMobile ? <WorksMobile/> : null
-          }
+          {  this.getMobileView()  }
         </div>
         
       )
