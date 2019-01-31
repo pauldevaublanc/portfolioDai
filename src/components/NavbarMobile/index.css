@@ -3,6 +3,7 @@
 }
 
 
+
 @media (max-width: 680px) {
     .navbarMobileWrapper {
         height: 100vh;
@@ -18,6 +19,10 @@
         top: 0;
         background-color: var(--lightGray);
         overflow-y: hidden;
+    }
+
+    .navbarMobileWrapper .activeLink  p {
+        color: var(--pink);
     }
 
     .navbarMobileWrapper p {

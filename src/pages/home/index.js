@@ -23,7 +23,7 @@ class Home extends Component {
 
 scrollOnClick() {
   window.scrollTo({
-    top: window.innerHeight,
+    top: window.innerHeight - 60,
     behavior: 'smooth'
   });
 }

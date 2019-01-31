@@ -38,6 +38,10 @@
     
 }
 
+.activeLink p {
+    color: var(--pink)
+}
+
 /**** TRANSITION COLOR HOVER ****/
 
 .transitionColor p {

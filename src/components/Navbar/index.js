@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './index.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { disableScroll, enableScroll } from '../../helpers/scroll'
+import { disableScroll, enableScroll } from '../../helpers/scroll';
 import NavbarMobile from '../NavbarMobile/index';
-
-
 
 
 class Navbar extends Component {
@@ -65,9 +63,7 @@ class Navbar extends Component {
             if (isMobile !== this.state.isMobile){
                 this.setState({isMobile})
             }
-        })  
-        
-         
+        }) 
     }
 
     componentWillUnmount() {
@@ -75,8 +71,6 @@ class Navbar extends Component {
         window.removeEventListener('resize', this.handleResize);
         document.removeEventListener('scroll', this.handleScroll);
     }
-    
-
 
     render() {
         const isMobile = this.state.windowWidth <= 680;
@@ -86,10 +80,10 @@ class Navbar extends Component {
                     onClick={this.handleScroll} 
                     className={`navbarWrapper ${this.state.isTop  || !this.state.isMobile ? '': 'bgGrey'}`} 
                     style={this.props.style}>
-                        {this.state.menuOpen? <NavbarMobile/> : null }
+                        {this.state.menuOpen? <NavbarMobile onClickNav={this.handleClick} /> : null }
                     <div className="navbarElements transitionColor">
-                        <Link to={isMobile ? "/" : "/work"}><p data-hover="Work">Work</p></Link>
-                        <Link to="/about"><p data-hover="Profile">Profile</p></Link>
+                        <NavLink activeClassName={'activeLink'} to={isMobile ? "/" : "/work"}><p data-hover="Work">Work</p></NavLink>
+                        <NavLink activeClassName={'activeLink'} to="/about"><p data-hover="Profile">Profile</p></NavLink>
                     </div>
 
                     
