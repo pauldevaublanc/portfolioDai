@@ -15,6 +15,15 @@ body {
   padding: 0;
 }
 
+input,
+textarea,
+button,
+select,
+a, 
+img {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 p {
   font-size: 13px;
 }
