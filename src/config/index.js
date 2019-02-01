@@ -304,7 +304,7 @@ export default {
         {
             id: 5,
             title: 'Covance',
-            img: 'Covance_leaflet_2.jpg'
+            img: 'covance-horizontal.jpg'
         },
         {
             id: 27,
@@ -319,7 +319,7 @@ export default {
         {
             id: 1,
             title: 'Archive',
-            img: 'Archives_1.png'
+            img: 'archive-horizontal.jpg'
         }
     ],
 

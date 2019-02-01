@@ -104,7 +104,7 @@ class WorkDetail extends Component {
                         </div>
                     </div> 
                 </div>  
-                <Footer/> 
+                <Footer style={{ visibility: loader ? 'hidden' : 'visible' }}/> 
             </div>
             </div>
         )

@@ -9,16 +9,11 @@ class Loader extends Component {
   
       <div className="loaderWrapper">
          <div className="loader">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+         <img 
+            className="visuelWorkMobile"
+            src={require(`../../img/loader.gif`)} 
+            alt=""/>
         </div>
-        <div>Loading</div>
       </div>
         
       );

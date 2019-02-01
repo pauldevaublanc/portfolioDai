@@ -24,6 +24,8 @@ a {
   color: inherit;
 }
 
+img:focus {outline:0; background-color:transparent;}
+
 /**** TEXT SELECTION COLOR ****/
 ::-moz-selection {
   background-color: var(--pink);

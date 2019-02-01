@@ -118,7 +118,7 @@ class Work extends Component {
             <div className="navbarFirst">
                 <Navbar/>
             </div>
-            <div className="workContainer" style={{ visibility: loader ? 'hidden' : 'visible' }}>
+            <div className="workContainer">
                 <div className="rotateNameFirst" >
                     <RotateName/>
                 </div>
