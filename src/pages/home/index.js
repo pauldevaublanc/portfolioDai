@@ -13,6 +13,7 @@ import Navbar from '../../components/Navbar';
 import TitleCircleMobile from '../../components/TitleCircleMobile';
 
 
+
 class Home extends Component {
 
   state = {

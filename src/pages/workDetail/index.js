@@ -25,6 +25,7 @@ class WorkDetail extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         const id = this.props.match.params.index - 1
         const visuels = config.works[id].detail.visuel
         const totalImg = visuels.length
@@ -41,8 +42,8 @@ class WorkDetail extends Component {
         const loader = this.state.totalImages === 0 || this.state.imagesLoaded < this.state.totalImages
         
         return (       
-            <div>
-            { loader && <Loader/> }
+            <div style={{height: loader ? '100vh' : 'auto', overflow: loader ? 'hidden' : 'auto'}}>
+            { loader && <Loader style={{zIndex:0}}/> }
             <div className="workDetailWrapper">
                 <Navbar/>
                 <div className="workDetailContainer">
@@ -52,9 +53,8 @@ class WorkDetail extends Component {
                             
                             <div className="description">
                                 <img src={require(`../../img/${logo}`)} alt="" />
-                                <Fade bottom>
+                                
                                     <p>{config.works[id].detail.description}</p>
-                                </Fade>
                             </div>
                             
                             <Fade bottom cascade>
