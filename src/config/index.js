@@ -127,8 +127,9 @@ const Keed = {
     agency: 'Keed',
     year: 2016,
     visuel: [
-        'keed-01.jpg',
-        'keed-02.jpg'
+        'keed_detail_1.png',
+        'keed_detail_2.jpg',
+        'keed_detail_3.jpg'
     ]
 }
 
