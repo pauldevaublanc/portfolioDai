@@ -33,7 +33,6 @@ handleWindowSizeChange = () => {
     if (isMobile) {
       content= <img 
       style={{
-        width:'70%', 
         paddingBottom:30, 
         paddingTop:20
       }} 
