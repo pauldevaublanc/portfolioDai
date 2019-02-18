@@ -10,7 +10,8 @@ const archive = {
         'Archives_2.png',
         'Archives_3.png',
         'Archives_4.png',
-        'Archives_5.jpg'
+        'Archives_5.jpg',
+        'Archives_6.jpg'
     ]
 }
 
@@ -406,7 +407,7 @@ export default {
             id: 5,
             title: 'Chevignon',
             subTitle: 'T-shirt design • textile graphics',
-            img: 'chevignon_1.jpg',
+            img: 'chevignon_1.png',
             color: '#F8AF3B',
             width: 150,
             position: {
@@ -419,7 +420,7 @@ export default {
             id: 5,
             title: 'Chevignon',
             subTitle: 'T-shirt design • textile graphics',
-            img: 'chevignon_2.jpg',
+            img: 'chevignon_2.png',
             color: '#F8AF3B',
             width: 140,
             position: {
@@ -445,7 +446,7 @@ export default {
             id: 5,
             title: 'Chevignon',
             subTitle: 'T-shirt design • textile graphics',
-            img: 'chevignon_4.jpg',
+            img: 'chevignon_4.png',
             color: '#F8AF3B',
             width: 110,
             position: {
@@ -458,7 +459,7 @@ export default {
             id: 5,
             title: 'Chevignon',
             subTitle: 'T-shirt design • textile graphics',
-            img: 'chevignon_5.jpg',
+            img: 'chevignon_5.png',
             color: '#F8AF3B',
             width: 120,
             position: {
@@ -471,7 +472,7 @@ export default {
             id: 6,
             title: 'Ikks',
             subTitle: 'T-shirt design • textile graphics',
-            img: 'IKKS-SummerTrip_02.jpg',
+            img: 'IKKS_2.png',
             color: '#3FA6F2',
             width: 150,
             position: {
@@ -692,7 +693,7 @@ export default {
             id: 13,
             title: 'Tokyoiter',
             subTitle: 'poster design',
-            img: 'TOKYOITER.jpg',
+            img: 'TOKYOITER.png',
             color: '#F8AF3B',
             width: 200,
             position: {

@@ -10,6 +10,49 @@ import Footer from '../../components/Footer/index';
 
 
 class Profile extends Component {
+
+  state = {
+    windowWidth: window.innerWidth
+} 
+
+componentWillMount() {
+  window.addEventListener('resize', this.handleWindowSizeChange);
+}
+
+componentWillUnmount() {
+  window.removeEventListener('resize', this.handleWindowSizeChange);
+}
+
+handleWindowSizeChange = () => {
+  this.setState({ windowWidth: window.innerWidth });
+};
+
+  getMobileView = () => {
+    const isMobile = this.state.windowWidth <= 680;
+    let content = null;
+    if (isMobile) {
+      content= <img 
+      style={{
+        width:'70%', 
+        paddingBottom:30, 
+        paddingTop:20
+      }} 
+      src={require('../../img/font_mobile.png')} 
+      alt="" />
+    } else {
+      content= <img 
+      style={{
+        width:'100%', 
+        paddingBottom:30, 
+        paddingTop:20
+      }} 
+      src={require('../../img/font_desktop.png')} 
+      alt="" />
+    }
+  
+    return content
+  }
+
     render() {
       return (
         <div className="profileWrapper">
@@ -20,7 +63,7 @@ class Profile extends Component {
               <Fade bottom>
                 <div className="introduction">
                   <p>Ladies and Gentlemen</p>
-                  <h1 className="mobileTitle">私は<br className="dpMobile"/>大ゴンド<br className="dpMobile"/><span className="dpMobile">です</span>*</h1>
+                  {  this.getMobileView()  }
                   <p>* I am Dai Gondo</p>
                 </div>
               </Fade>
